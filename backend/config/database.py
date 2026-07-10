@@ -17,7 +17,7 @@ class Database:
                 f"DRIVER={driver};"
                 f"SERVER={server};"
                 f"DATABASE={db_name};"
-                #f"Trusted_Connection={db_encrypt};"
+                f"Trusted_Connection=yes;"
             )
             return conn
         except pyodbc.Error as e:
