@@ -1,0 +1,48 @@
+{
+  "nombre": "Chamanes de las cuatro tribus",
+  "categoria": "Grupo secundario",
+  "descripcion": {
+    "nombre_completo": "Chamanes de las tribus Diquís, Cabécares, Bribris y Borucas",
+    "alias": "Chamanes, Ancianos Sabios",
+    "edad": "Ancianos",
+    "apariencia": "Pinturas faciales, tocados de plumas, ropas ceremoniales y collares de jade",
+    "personalidad": "Sabios, reservados y respetuosos de la tradición",
+    "trasfondo": "Guardianes del conocimiento ancestral y participantes en la profecía",
+    "motivacion": "Preservar la cultura y la vida de su pueblo",
+    "habilidades": "Hierbas, rituales, astronomía y lenguaje sagrado",
+    "arco": "Facilitan el camino de las tribus hacia la supervivencia",
+    "relaciones": "Curré, Cisco, Nawa, Gil"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Sabios",
+      "Tradicionales",
+      "Reservados",
+      "Espirituales"
+    ],
+    "estadisticas": {
+      "fuerza": 3,
+      "inteligencia": 8,
+      "agilidad": 2,
+      "resistencia": 4,
+      "espiritu": 9
+    },
+    "puntos_salud": 80,
+    "habilidades_especiales": [
+      "Rituales",
+      "Astronomía",
+      "Herboristería"
+    ],
+    "poderes": [
+      "Sabiduría ancestral"
+    ],
+    "funciones": [
+      "Guía espiritual",
+      "Guardia cultural"
+    ],
+    "color": "Verde"
+  },
+  "notas": [
+    "Grupo espiritual clave para la historia"
+  ]
+}

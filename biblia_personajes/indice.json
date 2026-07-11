@@ -1,0 +1,78 @@
+{
+  "libro": "Proyecto Proton",
+  "cantidad": 18,
+  "personajes": [
+    {
+      "nombre": "Francisco Cisco González Dávila",
+      "archivo": "francisco_cisco_gonzalez_davila.json"
+    },
+    {
+      "nombre": "Boenawa Shilea",
+      "archivo": "boenawa_shilea.json"
+    },
+    {
+      "nombre": "Gilberto Gil González Dávila",
+      "archivo": "gilberto_gil_gonzalez_davila.json"
+    },
+    {
+      "nombre": "Don Paco",
+      "archivo": "don_paco.json"
+    },
+    {
+      "nombre": "Rey Curré",
+      "archivo": "rey_curre.json"
+    },
+    {
+      "nombre": "Droid",
+      "archivo": "droid.json"
+    },
+    {
+      "nombre": "Loky",
+      "archivo": "loky.json"
+    },
+    {
+      "nombre": "Pipo Ramsés",
+      "archivo": "pipo_ramses.json"
+    },
+    {
+      "nombre": "Shilea",
+      "archivo": "shilea.json"
+    },
+    {
+      "nombre": "Tamanco",
+      "archivo": "tamanco.json"
+    },
+    {
+      "nombre": "Doctor Miranda",
+      "archivo": "doctor_miranda.json"
+    },
+    {
+      "nombre": "Obstetra Rodríguez",
+      "archivo": "obstetra_rodriguez.json"
+    },
+    {
+      "nombre": "Cristóbal Colón",
+      "archivo": "cristobal_colon.json"
+    },
+    {
+      "nombre": "Chamanes de las cuatro tribus",
+      "archivo": "chamanes_de_las_cuatro_tribus.json"
+    },
+    {
+      "nombre": "Tribu Diquís",
+      "archivo": "tribu_diquis.json"
+    },
+    {
+      "nombre": "Españoles y marineros de la expedición",
+      "archivo": "espanoles_y_marineros_de_la_expedicion.json"
+    },
+    {
+      "nombre": "La Banshee",
+      "archivo": "la_banshee.json"
+    },
+    {
+      "nombre": "Guardían del Templo del Norte",
+      "archivo": "guardian_del_templo_del_norte.json"
+    }
+  ]
+}

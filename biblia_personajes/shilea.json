@@ -1,0 +1,50 @@
+{
+  "nombre": "Shilea",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Ditsowe Shilea",
+    "alias": "Shilea, La Madre Viajera",
+    "edad": "Fallece joven en 1990",
+    "apariencia": "Mujer indígena de piel morena, cabello negro, ojos oscuros, aretes de jade morado",
+    "personalidad": "Valiente, amorosa y sacrificada",
+    "trasfondo": "Originaria de una tribu cabécar, viajó al futuro para salvar a sus hijos y a su pueblo",
+    "motivacion": "Salvar a sus hijos y a su comunidad",
+    "habilidades": "Conocimiento de plantas medicinales, valor y conexión con las gemas",
+    "arco": "Su presencia emocional guía a los hermanos desde la distancia",
+    "relaciones": "Cisco, Nawa, Gil, Don Paco, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Amorosa",
+      "Sacrificial",
+      "Valiente",
+      "Mística",
+      "Protectora"
+    ],
+    "estadisticas": {
+      "fuerza": 5,
+      "inteligencia": 7,
+      "agilidad": 5,
+      "resistencia": 5,
+      "espiritu": 8
+    },
+    "puntos_salud": 70,
+    "habilidades_especiales": [
+      "Herboristería",
+      "Conexión con gemas"
+    ],
+    "poderes": [
+      "Gema Morada",
+      "Gema Índigo"
+    ],
+    "funciones": [
+      "Madre",
+      "Guía espiritual",
+      "Fuente emocional"
+    ],
+    "color": "Violeta"
+  },
+  "notas": [
+    "Es el vínculo emocional que une a los hermanos"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "nombre": "Boenawa Shilea",
+  "categoria": "Personaje principal",
+  "descripcion": {
+    "nombre_completo": "Boenawa Shilea",
+    "alias": "Nawa, Ditsowe, La Jaguar, Guardiana del Valle",
+    "edad": "Aproximadamente 12-13 años",
+    "apariencia": "Piel morena, cabello negro, ojos negros brillantes, contextura ágil y musculosa",
+    "personalidad": "Feroz, valiente, intuitiva, protectora y leal",
+    "trasfondo": "Criada por Don Paco, entrenada para ser una Jawa y protegida por la conexión con la naturaleza",
+    "motivacion": "Proteger a su pueblo, a sus hermanos y cumplir la profecía",
+    "habilidades": "Combate con cuchillo de obsidiana, supervivencia en la selva, uso de plantas medicinales y vínculo con Loky",
+    "arco": "Pasa de guerrera solitaria a líder espiritual y protectora",
+    "relaciones": "Cisco, Gil, Don Paco, Loky, Curré, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Valiente",
+      "Protectora",
+      "Intuitiva",
+      "Pragmática",
+      "Resiliente"
+    ],
+    "estadisticas": {
+      "fuerza": 8,
+      "inteligencia": 7,
+      "agilidad": 9,
+      "resistencia": 7,
+      "espiritu": 8
+    },
+    "puntos_salud": 95,
+    "habilidades_especiales": [
+      "Combate cuerpo a cuerpo",
+      "Supervivencia",
+      "Herboristería",
+      "Comunicación con animales"
+    ],
+    "poderes": [
+      "Gema Verde de Sanación",
+      "Gema Índigo de Espíritu"
+    ],
+    "funciones": [
+      "Guerrera",
+      "Protectora",
+      "Guía espiritual"
+    ],
+    "color": "Verde"
+  },
+  "notas": [
+    "Representa la protección, la fuerza y la sanación"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "nombre": "Gilberto Gil González Dávila",
+  "categoria": "Personaje principal",
+  "descripcion": {
+    "nombre_completo": "Gilberto González Dávila",
+    "alias": "Gil, Ojos de Ámbar, Hijo de los Españoles",
+    "edad": "Aproximadamente 14 años",
+    "apariencia": "Cabello oscuro, piel acaramelada, ojos amarillos brillantes, complexión atlética",
+    "personalidad": "Seguro de sí mismo, carismático, leal y atormentado por su identidad",
+    "trasfondo": "Gemelo de Cisco, criado por una pareja española y luego confrontado con su origen indígena",
+    "motivacion": "Encontrar su verdadera identidad y redimirse de su vínculo con la expedición española",
+    "habilidades": "Espadachín, estratega militar, líder nato, conocimiento de navegación",
+    "arco": "De conquistador confundido a defensor de los pueblos indígenas",
+    "relaciones": "Cisco, Nawa, Don Paco, Curré, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Carismático",
+      "Estratega",
+      "Leal",
+      "Valiente",
+      "Confundido pero noble"
+    ],
+    "estadisticas": {
+      "fuerza": 8,
+      "inteligencia": 7,
+      "agilidad": 7,
+      "resistencia": 7,
+      "espiritu": 6
+    },
+    "puntos_salud": 92,
+    "habilidades_especiales": [
+      "Espadachín",
+      "Táctica militar",
+      "Navegación"
+    ],
+    "poderes": [
+      "Gema Morada de Creación"
+    ],
+    "funciones": [
+      "Guerrero",
+      "Líder",
+      "Puente cultural"
+    ],
+    "color": "Violeta"
+  },
+  "notas": [
+    "Representa la identidad dual y la reconciliación"
+  ]
+}

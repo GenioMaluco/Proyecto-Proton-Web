@@ -1,0 +1,52 @@
+{
+  "nombre": "Droid",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Droid",
+    "alias": "El Robot, La Mochila, El Sistema",
+    "edad": "Construido dos años antes del viaje",
+    "apariencia": "Robot humanoide, casco de soldador, ojo rojo, capacidad de transformarse",
+    "personalidad": "Leal, práctico, lógico y con un toque de humor",
+    "trasfondo": "Construido por Cisco para acompañarlo y ayudarlo en la misión",
+    "motivacion": "Proteger a Cisco y ayudar a cumplir la misión",
+    "habilidades": "Escaneo multidimensional, traducción, hologramas, armas sónicas y transformaciones",
+    "arco": "Evolutiona su conexión emocional con Cisco y su capacidad de adaptación",
+    "relaciones": "Cisco, Nawa, Gil, Don Paco"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Leal",
+      "Práctico",
+      "Lógico",
+      "Adaptable",
+      "Útil"
+    ],
+    "estadisticas": {
+      "fuerza": 6,
+      "inteligencia": 9,
+      "agilidad": 6,
+      "resistencia": 8,
+      "espiritu": 5
+    },
+    "puntos_salud": 100,
+    "habilidades_especiales": [
+      "Escaneo",
+      "Traducción",
+      "Transformación",
+      "Soporte táctico"
+    ],
+    "poderes": [
+      "Hologramas",
+      "Campos de energía"
+    ],
+    "funciones": [
+      "Asistente",
+      "Inteligencia artificial",
+      "Aliado"
+    ],
+    "color": "Azul"
+  },
+  "notas": [
+    "Representa la ciencia, la ayuda tecnológica y la lealtad"
+  ]
+}

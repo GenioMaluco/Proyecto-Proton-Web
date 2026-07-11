@@ -1,0 +1,45 @@
+{
+  "nombre": "Doctor Miranda",
+  "categoria": "Personaje secundario",
+  "descripcion": {
+    "nombre_completo": "Doctor Miranda",
+    "alias": "El Doctor, El Hombre de Ciencia",
+    "edad": "65 años",
+    "apariencia": "Hombre mayor, bata blanca, gafas y expresión seria",
+    "personalidad": "Escéptico, racional y luego convencido por lo inexplicable",
+    "trasfondo": "Médico de guardia en el nacimiento de los gemelos y cómplice de Don Paco",
+    "motivacion": "Actuar según su conciencia aunque eso rompa reglas",
+    "habilidades": "Medicina y cirugía",
+    "arco": "De escéptico a creyente del destino",
+    "relaciones": "Don Paco, los gemelos, la obstetra Rodríguez"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Racional",
+      "Profesional",
+      "Honesto",
+      "Consciente"
+    ],
+    "estadisticas": {
+      "fuerza": 2,
+      "inteligencia": 8,
+      "agilidad": 2,
+      "resistencia": 4,
+      "espiritu": 6
+    },
+    "puntos_salud": 78,
+    "habilidades_especiales": [
+      "Medicina",
+      "Cirugía"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Médico",
+      "Cómplice"
+    ],
+    "color": "Amarillo"
+  },
+  "notas": [
+    "Personaje clave para la trama del nacimiento"
+  ]
+}

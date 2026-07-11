@@ -1,0 +1,46 @@
+{
+  "nombre": "Guardían del Templo del Norte",
+  "categoria": "Entidad secundaria",
+  "descripcion": {
+    "nombre_completo": "Guardían del Templo del Norte",
+    "alias": "El Gólem, La Montaña Viviente",
+    "edad": "Antigua",
+    "apariencia": "Gólem de granito de tres metros, gema blanca incrustada en el pecho",
+    "personalidad": "Impasible y justo",
+    "trasfondo": "Criado para proteger la Gema Blanca de la Transformación",
+    "motivacion": "Proteger la gema hasta que llegue el elegido",
+    "habilidades": "Fuerza sobrehumana, resistencia, control de vapor y temperatura",
+    "arco": "Es derrotado por Cisco y Tamanco",
+    "relaciones": "Cisco, Tamanco"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Inamovible",
+      "Resistente",
+      "Justo",
+      "Elemental"
+    ],
+    "estadisticas": {
+      "fuerza": 9,
+      "inteligencia": 4,
+      "agilidad": 2,
+      "resistencia": 10,
+      "espiritu": 5
+    },
+    "puntos_salud": 95,
+    "habilidades_especiales": [
+      "Control de vapor",
+      "Resistencia"
+    ],
+    "poderes": [
+      "Gema Blanca"
+    ],
+    "funciones": [
+      "Guardia elemental"
+    ],
+    "color": "Blanco"
+  },
+  "notas": [
+    "Representa la prueba de valor y la transformación"
+  ]
+}

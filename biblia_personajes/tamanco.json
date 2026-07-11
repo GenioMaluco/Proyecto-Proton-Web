@@ -1,0 +1,46 @@
+{
+  "nombre": "Tamanco",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Tamanco",
+    "alias": "El Guerrero Leal",
+    "edad": "Adulto, aproximadamente 30 años",
+    "apariencia": "Hombre fornido, piel oscura, pinturas de guerra, adornos de plumas y conchas",
+    "personalidad": "Valiente, leal, respetuoso y curioso",
+    "trasfondo": "Guerrero Boruca que guia a Cisco en el Templo del Norte",
+    "motivacion": "Proteger a su pueblo y ayudar a Cisco en su misión",
+    "habilidades": "Combate cuerpo a cuerpo, conocimiento de la montaña y la selva",
+    "arco": "Su lealtad es clave para la batalla final",
+    "relaciones": "Cisco, Curré, Nawa, Gil"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Leal",
+      "Fuerte",
+      "Valiente",
+      "Respetuoso",
+      "Práctico"
+    ],
+    "estadisticas": {
+      "fuerza": 8,
+      "inteligencia": 5,
+      "agilidad": 6,
+      "resistencia": 8,
+      "espiritu": 6
+    },
+    "puntos_salud": 88,
+    "habilidades_especiales": [
+      "Combate",
+      "Guía de montaña"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Guerrero",
+      "Guía"
+    ],
+    "color": "Verde"
+  },
+  "notas": [
+    "Representa la fuerza y la lealtad entre pueblos"
+  ]
+}

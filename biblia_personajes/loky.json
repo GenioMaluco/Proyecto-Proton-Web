@@ -1,0 +1,51 @@
+{
+  "nombre": "Loky",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Loky",
+    "alias": "El Jaguar Negro, Espíritu del Valle",
+    "edad": "Indeterminada",
+    "apariencia": "Jaguar negro grande con manchas doradas y ojos amarillos",
+    "personalidad": "Feroz, salvaje al inicio, luego protector y leal",
+    "trasfondo": "Criatura espiritual herida por Pipo/Ramsés y sanada por Cisco",
+    "motivacion": "Proteger a sus aliados y vengar el daño recibido",
+    "habilidades": "Fuerza, velocidad, sigilo y conexión espiritual con la selva",
+    "arco": "De criatura herida a guardián protector",
+    "relaciones": "Nawa, Cisco, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Feroz",
+      "Protector",
+      "Ágil",
+      "Instintivo",
+      "Leal"
+    ],
+    "estadisticas": {
+      "fuerza": 9,
+      "inteligencia": 6,
+      "agilidad": 9,
+      "resistencia": 8,
+      "espiritu": 7
+    },
+    "puntos_salud": 90,
+    "habilidades_especiales": [
+      "Sigilo",
+      "Garras",
+      "Fuerza sobrehumana",
+      "Conexión espiritual"
+    ],
+    "poderes": [
+      "Conexión con la selva"
+    ],
+    "funciones": [
+      "Guardián",
+      "Compañero animal",
+      "Protector"
+    ],
+    "color": "Rojo"
+  },
+  "notas": [
+    "Representa la fuerza bruta y el vínculo con la naturaleza"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "nombre": "La Banshee",
+  "categoria": "Entidad secundaria",
+  "descripcion": {
+    "nombre_completo": "La Banshee",
+    "alias": "El Alma en Pena, El Eco de los Caídos",
+    "edad": "Eterna",
+    "apariencia": "Forma espectral, traslúcida, ojos vacíos y boca de grito",
+    "personalidad": "Dolorosa, vengativa y llena de rabia acumulada",
+    "trasfondo": "Manifestación del dolor de los guerreros caídos en el templo del sur",
+    "motivacion": "Evitar que alguien más tome la Gema Verde",
+    "habilidades": "Alarido psíquico, control de sombras, posesión",
+    "arco": "Es derrotada cuando Nawa y Loky unen fuerzas",
+    "relaciones": "Nawa, Loky"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Espectral",
+      "Vengativa",
+      "Dolorosa",
+      "Poderosa"
+    ],
+    "estadisticas": {
+      "fuerza": 5,
+      "inteligencia": 7,
+      "agilidad": 6,
+      "resistencia": 6,
+      "espiritu": 9
+    },
+    "puntos_salud": 70,
+    "habilidades_especiales": [
+      "Control de sombras",
+      "Alarido psíquico"
+    ],
+    "poderes": [
+      "Posesión",
+      "Manipulación emocional"
+    ],
+    "funciones": [
+      "Antagonista espiritual"
+    ],
+    "color": "Negro"
+  },
+  "notas": [
+    "Representa el dolor no resuelto"
+  ]
+}

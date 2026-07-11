@@ -1,0 +1,51 @@
+{
+  "nombre": "Pipo Ramsés",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Ramsés II",
+    "alias": "Pipo, El Faraón, El Primogénito",
+    "edad": "Más de 3000 años",
+    "apariencia": "Hombre alto, tez morena, rasgos egipcios, tocado de oro y lapislázuli",
+    "personalidad": "Narcisista, arrogante, manipulador y obsesionado con el poder",
+    "trasfondo": "Faraón egipcio que viajó en el tiempo y se hizo pasar por un Jawa ancestral",
+    "motivacion": "Reunir las ocho gemas para abrir un portal y obtener poder absoluto",
+    "habilidades": "Control del tiempo, magia ancestral, manipulación mental y premonición limitada",
+    "arco": "Antagonista trágico que termina atrapado en su propio bucle",
+    "relaciones": "Cisco, Nawa, Gil, Don Paco, Curré"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Manipulador",
+      "Ambicioso",
+      "Estratega",
+      "Cruel",
+      "Poderoso"
+    ],
+    "estadisticas": {
+      "fuerza": 7,
+      "inteligencia": 9,
+      "agilidad": 6,
+      "resistencia": 7,
+      "espiritu": 8
+    },
+    "puntos_salud": 80,
+    "habilidades_especiales": [
+      "Control temporal",
+      "Magia ancestral",
+      "Manipulación mental"
+    ],
+    "poderes": [
+      "Gema Roja de Valor",
+      "Gema Amarilla de Voluntad"
+    ],
+    "funciones": [
+      "Antagonista",
+      "Manipulador",
+      "Rival del tiempo"
+    ],
+    "color": "Amarillo"
+  },
+  "notas": [
+    "Representa la ambición, el orgullo y la corrupción del poder"
+  ]
+}

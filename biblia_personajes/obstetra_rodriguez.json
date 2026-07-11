@@ -1,0 +1,44 @@
+{
+  "nombre": "Obstetra Rodríguez",
+  "categoria": "Personaje secundario",
+  "descripcion": {
+    "nombre_completo": "Rodríguez",
+    "alias": "La Obstetra, La Enfermera",
+    "edad": "Adulta",
+    "apariencia": "Uniforme de enfermera, expresión seria y profesional",
+    "personalidad": "Práctica, discreta y leal a sus intereses",
+    "trasfondo": "Presente en el parto de los gemelos y testigo del trato con los González Dávila",
+    "motivacion": "Mantenerse al margen y obtener un beneficio económico",
+    "habilidades": "Asistencia médica y discreción",
+    "arco": "Su silencio permite que la historia avance",
+    "relaciones": "Doctor Miranda, Don Paco, los gemelos"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Discreta",
+      "Profesional",
+      "Práctica",
+      "Leal a su interés"
+    ],
+    "estadisticas": {
+      "fuerza": 1,
+      "inteligencia": 6,
+      "agilidad": 2,
+      "resistencia": 3,
+      "espiritu": 4
+    },
+    "puntos_salud": 76,
+    "habilidades_especiales": [
+      "Asistencia médica"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Enfermera",
+      "Testigo"
+    ],
+    "color": "Azul"
+  },
+  "notas": [
+    "Es una pieza menor que facilita el desarrollo del conflicto"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "nombre": "Tribu Diquís",
+  "categoria": "Grupo secundario",
+  "descripcion": {
+    "nombre_completo": "Pueblo Diquís",
+    "alias": "Los Diquís, Pueblo de las Esferas",
+    "edad": "Colectivo de todas las edades",
+    "apariencia": "Piel morena, cabello negro, vestidos con taparrabos y adornos de oro y jade",
+    "personalidad": "Valientes, hospitalarios y desconfiados de los extraños",
+    "trasfondo": "Descendientes de los constructores de esferas y aliados de los hermanos",
+    "motivacion": "Sobrevivir y preservar su cultura",
+    "habilidades": "Agricultura, tallado de piedra, guerra y astronomía",
+    "arco": "Pasan de víctimas del destino a constructores de su propia salvación",
+    "relaciones": "Curré, Cisco, Nawa, Gil"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Hospitalarios",
+      "Valientes",
+      "Conectados con la naturaleza",
+      "Resilientes"
+    ],
+    "estadisticas": {
+      "fuerza": 7,
+      "inteligencia": 7,
+      "agilidad": 5,
+      "resistencia": 7,
+      "espiritu": 8
+    },
+    "puntos_salud": 85,
+    "habilidades_especiales": [
+      "Taller de piedra",
+      "Astronomía",
+      "Guerra"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Pueblo aliado",
+      "Población principal"
+    ],
+    "color": "Naranja"
+  },
+  "notas": [
+    "Grupo cultural fundamental de la historia"
+  ]
+}

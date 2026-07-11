@@ -1,0 +1,51 @@
+{
+  "nombre": "Don Paco",
+  "categoria": "Personaje principal",
+  "descripcion": {
+    "nombre_completo": "Francisco Paco",
+    "alias": "Don Paco, Jawa Paco, El Guardián del Tiempo",
+    "edad": "Aparenta 70 años, pero su edad real es incierta",
+    "apariencia": "Hombre mayor, espalda algo encorvada, ojos negros profundos, bata de laboratorio o ropa sencilla",
+    "personalidad": "Sabio, paciente, enigmático, bondadoso y con humor socarrón",
+    "trasfondo": "Guardia del equilibrio temporal, mentor de los hermanos y guía en distintas épocas",
+    "motivacion": "Proteger el flujo del tiempo y preparar a los jóvenes para su misión",
+    "habilidades": "Dominio de la física del tiempo, hipnosis, manipulación temporal y estrategia",
+    "arco": "Mentor que aprende a ceder el relevo a sus pupilos",
+    "relaciones": "Cisco, Nawa, Gil, Shilea, Pipo/Ramsés, Doctor Miranda"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Sabio",
+      "Paciente",
+      "Enigmático",
+      "Misterioso",
+      "Mentor"
+    ],
+    "estadisticas": {
+      "fuerza": 3,
+      "inteligencia": 10,
+      "agilidad": 3,
+      "resistencia": 4,
+      "espiritu": 9
+    },
+    "puntos_salud": 85,
+    "habilidades_especiales": [
+      "Manipulación temporal",
+      "Hipnosis",
+      "Estrategia",
+      "Conocimiento ancestral"
+    ],
+    "poderes": [
+      "Control del tiempo"
+    ],
+    "funciones": [
+      "Mentor",
+      "Guardián",
+      "Diseñador del destino"
+    ],
+    "color": "Índigo"
+  },
+  "notas": [
+    "Representa la sabiduría y el equilibrio del tiempo"
+  ]
+}

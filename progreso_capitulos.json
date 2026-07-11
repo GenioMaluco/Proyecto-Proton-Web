@@ -1,0 +1,45 @@
+{
+  "capitulos": {
+    "0": {
+      "carpeta": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0",
+      "merged": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0\\proyecto_proton_Capitulo_0.mp3",
+      "partes": [
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0\\proyecto_proton_Capitulo_0_parte01.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0\\proyecto_proton_Capitulo_0_parte02.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0\\proyecto_proton_Capitulo_0_parte03.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_0\\proyecto_proton_Capitulo_0_parte04.mp3"
+      ]
+    },
+    "1": {
+      "carpeta": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1",
+      "merged": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1.mp3",
+      "partes": [
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1_parte01.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1_parte02.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1_parte03.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1_parte04.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_1\\proyecto_proton_Capitulo_1_parte05.mp3"
+      ]
+    },
+    "2": {
+      "carpeta": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2",
+      "merged": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2.mp3",
+      "partes": [
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2_parte01.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2_parte02.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2_parte03.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2_parte04.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_2\\proyecto_proton_Capitulo_2_parte05.mp3"
+      ]
+    },
+    "3": {
+      "carpeta": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_3",
+      "merged": "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_3\\proyecto_proton_Capitulo_3.mp3",
+      "partes": [
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_3\\proyecto_proton_Capitulo_3_parte01.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_3\\proyecto_proton_Capitulo_3_parte02.mp3",
+        "C:\\Users\\adria\\Documents\\GenioMaluco-Portafolio\\Proyecto Proton\\capitulo_3\\proyecto_proton_Capitulo_3_parte03.mp3"
+      ]
+    }
+  }
+}

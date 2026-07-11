@@ -1,0 +1,50 @@
+{
+  "nombre": "Rey Curré",
+  "categoria": "Personaje secundario importante",
+  "descripcion": {
+    "nombre_completo": "Curré",
+    "alias": "Rey Curré, Señor del Valle, El Rey Humilde",
+    "edad": "Adulto maduro",
+    "apariencia": "Hombre imponente, piel cobriza, cabello negro largo con canas, tocado de plumas",
+    "personalidad": "Orgulloso al inicio, luego humilde, sabio y visionario",
+    "trasfondo": "Rey de los Diquís, aliado clave de los hermanos y guía del pueblo",
+    "motivacion": "Proteger a su pueblo y asegurar su supervivencia",
+    "habilidades": "Liderazgo, estrategia, conocimiento histórico y espiritual",
+    "arco": "De rey arrogante a líder sabio y humilde",
+    "relaciones": "Cisco, Nawa, Gil, Tamanco, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Líder",
+      "Sabio",
+      "Justo",
+      "Humilde",
+      "Visionario"
+    ],
+    "estadisticas": {
+      "fuerza": 7,
+      "inteligencia": 8,
+      "agilidad": 5,
+      "resistencia": 7,
+      "espiritu": 8
+    },
+    "puntos_salud": 88,
+    "habilidades_especiales": [
+      "Liderazgo",
+      "Estrategia",
+      "Visión del futuro"
+    ],
+    "poderes": [
+      "Gema Naranja de Sabiduría"
+    ],
+    "funciones": [
+      "Rey",
+      "Aliado",
+      "Guía"
+    ],
+    "color": "Naranja"
+  },
+  "notas": [
+    "Representa el liderazgo sabio y la unión de pueblos"
+  ]
+}

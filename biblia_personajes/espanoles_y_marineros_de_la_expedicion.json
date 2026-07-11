@@ -1,0 +1,45 @@
+{
+  "nombre": "Españoles y marineros de la expedición",
+  "categoria": "Grupo secundario",
+  "descripcion": {
+    "nombre_completo": "Conquistadores y marineros españoles",
+    "alias": "Conquistadores, Hombres de Metal",
+    "edad": "Adultos",
+    "apariencia": "Barbudos, armaduras de metal, espadas y arcabuces",
+    "personalidad": "Ambiciosos, temerosos y obedientes",
+    "trasfondo": "Forman parte de la expedición de 1499 y se enfrentan a los hermanos",
+    "motivacion": "Buscar riquezas y gloria",
+    "habilidades": "Combate con espada, uso de arcabuces y navegación",
+    "arco": "Son un obstáculo que los hermanos deben superar",
+    "relaciones": "Gil, Colón, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Ambiciosos",
+      "Organizados",
+      "Militares",
+      "Temerosos"
+    ],
+    "estadisticas": {
+      "fuerza": 6,
+      "inteligencia": 5,
+      "agilidad": 4,
+      "resistencia": 6,
+      "espiritu": 3
+    },
+    "puntos_salud": 75,
+    "habilidades_especiales": [
+      "Combate armado",
+      "Navegación"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Enemigos",
+      "Expedición"
+    ],
+    "color": "Rojo"
+  },
+  "notas": [
+    "Grupo antagonista de la expedición"
+  ]
+}

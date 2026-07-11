@@ -1,0 +1,52 @@
+{
+  "nombre": "Francisco Cisco González Dávila",
+  "categoria": "Personaje principal",
+  "descripcion": {
+    "nombre_completo": "Francisco González Dávila",
+    "alias": "Cisco, Ojos de Océano, Ojos de Abismo, Niño del Futuro",
+    "edad": "10 años al inicio; mentalmente madura más rápido",
+    "apariencia": "Cabello rubio claro, piel pálida, ojos azules profundos, lunar en la mejilla izquierda, delgado y menudo",
+    "personalidad": "Curioso, analítico, brillante, terco, valiente y emocionalmente sensible",
+    "trasfondo": "Gemelo de Gil, hijo de Shilea, adoptado por Don Paco tras el nacimiento; creció en Curridabat y construyó a Droid",
+    "motivacion": "Cumplir la misión de Don Paco, reunir las ocho gemas y descubrir la verdad sobre su origen",
+    "habilidades": "Inteligencia excepcional, ingeniería, lógica, liderazgo y capacidad para canalizar la Gema Blanca",
+    "arco": "Pasa de niño inseguro a líder decidido que acepta su papel en la historia",
+    "relaciones": "Don Paco, Nawa, Gil, Droid, Loky, Curré, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Inteligente",
+      "Analítico",
+      "Curioso",
+      "Valiente",
+      "Empático"
+    ],
+    "estadisticas": {
+      "fuerza": 4,
+      "inteligencia": 10,
+      "agilidad": 5,
+      "resistencia": 4,
+      "espiritu": 7
+    },
+    "puntos_salud": 90,
+    "habilidades_especiales": [
+      "Ingeniería",
+      "Análisis rápido",
+      "Liderazgo",
+      "Canalización de gemas"
+    ],
+    "poderes": [
+      "Gema Blanca de la Transformación"
+    ],
+    "funciones": [
+      "Protagonista",
+      "Héroe elegido",
+      "Científico",
+      "Líder"
+    ],
+    "color": "Azul"
+  },
+  "notas": [
+    "Representa la curiosidad y la transformación"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "nombre": "Cristóbal Colón",
+  "categoria": "Personaje secundario",
+  "descripcion": {
+    "nombre_completo": "Cristóbal Colón",
+    "alias": "El Almirante, El Padre Adoptivo de Gil",
+    "edad": "Adulto",
+    "apariencia": "Hombre europeo con barba, ropas de navegante y catalejo",
+    "personalidad": "Ambicioso, crédulo y algo pomposo",
+    "trasfondo": "Navegante genovés manipulado por Don Paco para que creyera ser Colón y zarpara a América",
+    "motivacion": "Cumplir su misión divina de encontrar nuevas rutas y riquezas",
+    "habilidades": "Navegación, liderazgo de tripulación",
+    "arco": "Es una pieza en el tablero de Don Paco",
+    "relaciones": "Gil, Don Paco, Pipo/Ramsés"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Ambicioso",
+      "Autoritario",
+      "Navegante",
+      "Crédulo"
+    ],
+    "estadisticas": {
+      "fuerza": 5,
+      "inteligencia": 6,
+      "agilidad": 4,
+      "resistencia": 5,
+      "espiritu": 4
+    },
+    "puntos_salud": 74,
+    "habilidades_especiales": [
+      "Navegación"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Explorador",
+      "Capitán"
+    ],
+    "color": "Amarillo"
+  },
+  "notas": [
+    "Sirve como herramienta de la manipulación temporal"
+  ]
+}
