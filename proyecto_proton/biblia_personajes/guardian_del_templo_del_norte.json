@@ -1,24 +1,32 @@
 {
-  "nombre": "Guardían del Templo del Norte",
+  "id": "guardian_norte",
+  "nombre": "Guardián del Templo del Norte",
+  "archivo": "guardian_del_templo_del_norte",
   "categoria": "Entidad secundaria",
+  "faccion": "Guardianes de los Templos",
+  "primera_aparicion": 7,
+  "capitulos_presente": [
+    7
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
-    "nombre_completo": "Guardían del Templo del Norte",
-    "alias": "El Gólem, La Montaña Viviente",
-    "edad": "Antigua",
-    "apariencia": "Gólem de granito de tres metros, gema blanca incrustada en el pecho",
-    "personalidad": "Impasible y justo",
-    "trasfondo": "Criado para proteger la Gema Blanca de la Transformación",
-    "motivacion": "Proteger la gema hasta que llegue el elegido",
-    "habilidades": "Fuerza sobrehumana, resistencia, control de vapor y temperatura",
-    "arco": "Es derrotado por Cisco y Tamanco",
-    "relaciones": "Cisco, Tamanco"
+    "nombre_completo": "Guardián del Templo del Norte",
+    "alias": "El Gólem de Granito, Espíritu de la Transformación",
+    "edad": "Milenaria",
+    "apariencia": "Coloso de granito de tres metros de altura alimentado por el calor del volcán, con ojos de brasa y la Gema Blanca en el pecho",
+    "personalidad": "Implacable, solemne y justo",
+    "trasfondo": "Guardián elemental de la Cordillera Volcánica Central que custodia la Gema Blanca de la Transformación",
+    "motivacion": "Exigir que el aspirante demuestre su capacidad de transformarse y vencer sus temores",
+    "habilidades": "Fuerza tectónica, inmunidad al calor extremo y resistencia al sonido",
+    "arco": "Es derrotado por el choque térmico entre el torrente de agua subterránea de Tamanco y el nitrógeno líquido de Cisco/Droid, dividiéndose en ocho esferas lisas perfectas",
+    "relaciones": "Cisco, Tamanco, Droid"
   },
   "atributos": {
     "caracteristicas": [
+      "Colosal",
+      "Elemental",
       "Inamovible",
-      "Resistente",
-      "Justo",
-      "Elemental"
+      "Justo"
     ],
     "estadisticas": {
       "fuerza": 9,
@@ -29,18 +37,32 @@
     },
     "puntos_salud": 95,
     "habilidades_especiales": [
-      "Control de vapor",
-      "Resistencia"
+      "Fuerza sísmica",
+      "Coraza de granito volcánico"
     ],
     "poderes": [
-      "Gema Blanca"
+      "Gema Blanca de la Transformación"
     ],
     "funciones": [
-      "Guardia elemental"
+      "Guardián del Templo del Norte (Gema Blanca)"
     ],
-    "color": "Blanco"
+    "color": "Blanco",
+    "hex": "#94a3b8"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Gólem de Granito del Volcán",
+      "faccion_visible": "Guardianes de los Templos",
+      "bio": "Coloso de tres metros que protege la Gema Blanca en el volcán. Al ser vencido mediante choque térmico por Cisco y Tamanco, su cuerpo se divide en ocho esferas de piedra perfectas."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Prueba del Templo del Norte en el Capítulo 7.1.",
+    "libro_2": "Clave sobre la composición física y alquímica de las Esferas.",
+    "libro_3": "Vínculo con la tecnología de granito negro de las Esferas Madre."
   },
   "notas": [
-    "Representa la prueba de valor y la transformación"
+    "Su colapso en ocho esferas anticipa el secreto de las cápsulas de transferencia."
   ]
 }

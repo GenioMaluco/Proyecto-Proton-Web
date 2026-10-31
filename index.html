@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Protón | Saga Canon, Lector Interactivo, Biblia de Personajes y Lore</title>
+  <meta name="description" content="Plataforma web interactiva del Libro 1 Canon Proyecto Protón (Saga de 3 Libros). Lector inmersivo con seguimiento de progreso, audiolibro Read-Along, grafo anti-spoilers de personajes y bóveda de apuntes de lore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Orbitron:wght@500;700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Fondo dinámico: portada (Portadav2.png) o ilustración del capítulo activo -->
+  <div id="page-backdrop" class="page-backdrop" aria-hidden="true"></div>
+  <div class="fireflies" aria-hidden="true"></div>
+
+  <!-- Barra global de progreso de lectura (HU-4.2) -->
+  <div class="global-reading-bar" id="global-reading-bar"></div>
+
+  <!-- Navegación Superior -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-orb" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">PROYECTO PROTÓN</div>
+        <span class="brand-subtitle">Libro 1 Canon · Trilogía &amp; Archivo de Lore</span>
+      </div>
+    </div>
+
+    <nav class="nav-tabs" aria-label="Navegación Principal">
+      <button type="button" class="nav-btn active" data-view="home">
+        🌌 Portal &amp; Saga
+      </button>
+      <button type="button" class="nav-btn" data-view="reader">
+        📖 Lector Canon (11 Cap.)
+      </button>
+      <button type="button" class="nav-btn" data-view="characters">
+        🧬 Personajes &amp; Grafo
+      </button>
+      <button type="button" class="nav-btn" data-view="lore">
+        💎 Lore, Gemas &amp; Apuntes
+      </button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- =======================================================================
+         VISTA 1: PORTAL DE LA SAGA Y DASHBOARD DE PROGRESO
+         ======================================================================= -->
+    <section id="view-home" class="view-section active" aria-labelledby="hero-heading">
+      <div class="hero-card">
+        <div class="hero-copy">
+        <div class="hero-badge">✨ UNIVERSO CANÓNICO · TRILOGÍA PROYECTO PROTÓN</div>
+        <h1 id="hero-heading" class="hero-title">
+          Del Árbol de Ámbar al Corazón de las Gemas del Arcoíris
+        </h1>
+        <p class="hero-lead">
+          Explora el manuscrito íntegro del <strong>Libro 1 (CANON): Proyecto Protón</strong>,
+          sigue la travesía de <strong>Protón (Don Paco)</strong>, <strong>Nawa (Protón 2)</strong>,
+          el <strong>Doctor Miranda</strong> y los Cinco Hermanos de Talamanca, navega el mapa de relaciones
+          libre de spoilers y consulta tus apuntes manuscritos de lore rumbo al <strong>Libro 2</strong> y <strong>Libro 3</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <button type="button" class="btn-primary" data-action="open-reader">
+            📖 Leer Libro 1 Canon
+          </button>
+          <button type="button" class="btn-secondary" data-action="open-lore">
+            📸 Subir / Ver Fotos de Apuntes a Mano
+          </button>
+        </div>
+
+        <div id="hero-stats-grid" class="hero-stats"></div>
+        </div>
+        <figure class="hero-art">
+          <img src="assets/img/Portadav2.png" alt="Portada de Proyecto Protón: jaguar negro tras una esfera Diquís con glifos luminosos en la selva" />
+        </figure>
+      </div>
+
+      <!-- Banner Continuar Leyendo (HU-4.2) -->
+      <div class="continue-banner">
+        <div class="continue-info">
+          <h4>🔖 Marcador Automático de Lectura</h4>
+          <p id="continue-chapter-title">Cap. 0: Nacimiento</p>
+          <span id="continue-chapter-meta" style="font-size:0.84rem;color:var(--text-muted);">
+            Párrafo #1 · 0% del libro completado
+          </span>
+        </div>
+        <button type="button" class="btn-primary" data-action="continue-reading">
+          ▶️ Continuar leyendo donde lo dejé
+        </button>
+      </div>
+
+      <!-- Mapa de la Trilogía (Libros 1, 2 y 3) -->
+      <h2 class="section-heading">📚 Arquitectura de la Saga (3 Libros)</h2>
+      <p class="section-subtitle">
+        Estructura organizada en la carpeta <code>saga/</code> para consulta rápida de manuscritos, capítulos individuales, fichas de personajes y apuntes.
+      </p>
+      <div id="saga-books-grid" class="saga-grid"></div>
+    </section>
+
+    <!-- =======================================================================
+         VISTA 2: LECTOR INTERACTIVO + MARCADORES + READ-ALONG (HU-4.1 & HU-4.2)
+         ======================================================================= -->
+    <section id="view-reader" class="view-section" aria-label="Lector Interactivo">
+      <!-- Cajón desplegable de marcadores manuales -->
+      <div id="bookmarks-drawer" class="bookmarks-drawer">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.65rem;">
+          <strong style="color:var(--accent-gold);font-size:0.9rem;">🔖 Mis Marcadores Guardados</strong>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Haz clic en 🔖 junto a cualquier párrafo para guardar o quitar un marcador</span>
+        </div>
+        <div id="bookmarks-list-container"></div>
+      </div>
+
+      <div class="reader-layout">
+        <!-- Índice lateral de capítulos -->
+        <aside class="chapter-sidebar" aria-label="Índice de Capítulos">
+          <div class="sidebar-header">
+            <span>Capítulos Canon</span>
+            <span style="font-size:0.75rem;color:var(--accent-cyan);">Libro 1</span>
+          </div>
+          <div id="reader-chapter-list" class="chapter-list"></div>
+        </aside>
+
+        <!-- Panel principal de lectura con soporte de temas (Oscuro / Sepia / Claro) -->
+        <article id="reader-main-panel" class="reader-panel" data-theme="dark">
+          <div class="reader-toolbar">
+            <div class="toolbar-group">
+              <span style="font-size:0.75rem;color:var(--text-muted);padding:0 0.4rem;">Tema:</span>
+              <button type="button" class="toolbar-btn active" data-theme-btn="dark">🌙 Oscuro</button>
+              <button type="button" class="toolbar-btn" data-theme-btn="sepia">📜 Sepia</button>
+              <button type="button" class="toolbar-btn" data-theme-btn="light">☀️ Claro</button>
+            </div>
+
+            <div class="toolbar-group">
+              <button type="button" id="btn-font-dec" class="toolbar-btn" title="Reducir tamaño de letra">A-</button>
+              <button type="button" id="btn-font-inc" class="toolbar-btn" title="Aumentar tamaño de letra">A+</button>
+              <button type="button" id="btn-toggle-font" class="toolbar-btn" title="Alternar tipografía Serif / Sans">Serif / Sans</button>
+            </div>
+
+            <div class="toolbar-group">
+              <button type="button" id="btn-toggle-bookmarks" class="toolbar-btn">
+                🔖 Marcadores (<span id="bookmarks-count-badge">0</span>)
+              </button>
+            </div>
+
+            <div id="reader-progress-label" style="font-size:0.78rem;font-family:var(--font-mono);color:var(--accent-cyan);">
+              Progreso: 0% · Párrafo #1
+            </div>
+          </div>
+
+          <header id="reader-chapter-header" class="chapter-header-banner"></header>
+
+          <div id="reader-paragraphs-container" class="chapter-content"></div>
+
+          <footer class="chapter-footer-nav">
+            <button type="button" id="btn-prev-chapter" class="btn-secondary">
+              ⬅️ Capítulo Anterior
+            </button>
+            <button type="button" id="btn-next-chapter" class="btn-primary">
+              Siguiente Capítulo ➡️
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VISTA 3: CATÁLOGO DE PERSONAJES Y GRAFO ANTI-SPOILERS (HU-4.3)
+         ======================================================================= -->
+    <section id="view-characters" class="view-section" aria-label="Biblia de Personajes y Relaciones">
+      <h2 class="section-heading">🧬 Biblia de Personajes &amp; Mapa de Relaciones</h2>
+      <p class="section-subtitle">
+        Filtra el universo de personajes principales, secundarios y entidades. Ajusta el control anti-spoilers según el capítulo que estés leyendo para revelar únicamente los vínculos y biografías descubiertos hasta ese punto.
+      </p>
+
+      <!-- Barra de control Anti-Spoilers -->
+      <div class="spoiler-bar">
+        <div>
+          <strong style="color:var(--accent-cyan);display:block;font-size:0.95rem;">
+            🛡️ Filtro Inteligente Anti-Spoilers por Capítulo
+          </strong>
+          <span style="font-size:0.82rem;color:var(--text-muted);">
+            Oculta automáticamente personajes, transformaciones y alianzas de capítulos posteriores.
+          </span>
+        </div>
+
+        <div class="spoiler-slider-wrap">
+          <input
+            type="range"
+            id="spoiler-chapter-slider"
+            min="0"
+            max="10"
+            value="10"
+            aria-label="Capítulo máximo permitido sin spoilers"
+          />
+          <span id="spoiler-chapter-badge" class="spoiler-badge">
+            Mostrando hasta Cap. 10: Epílogo: El Retorno de la Semilla
+          </span>
+          <button type="button" id="btn-spoiler-all" class="toolbar-btn">
+            Ver Todo el Canon
+          </button>
+        </div>
+      </div>
+
+      <!-- Grafo Interactivo SVG + Panel de Detalle -->
+      <div class="graph-container">
+        <div class="svg-graph-box">
+          <svg id="relationship-svg" viewBox="0 0 800 490" role="img" aria-label="Grafo interactivo de relaciones entre personajes"></svg>
+        </div>
+        <aside id="character-spotlight-box" class="character-spotlight"></aside>
+      </div>
+
+      <!-- Filtros de Categoría y Buscador -->
+      <div class="filter-pills">
+        <button type="button" class="pill-btn active" data-char-cat="todos">Todos (20)</button>
+        <button type="button" class="pill-btn" data-char-cat="principales">⭐ Principales (4)</button>
+        <button type="button" class="pill-btn" data-char-cat="secundarios">🧭 Secundarios (11)</button>
+        <button type="button" class="pill-btn" data-char-cat="grupos">🏛️ Grupos y Entidades (5)</button>
+        <input
+          type="search"
+          id="char-search-input"
+          placeholder="🔍 Buscar por nombre, alias, rol o facción..."
+          style="margin-left:auto;background:rgba(15,23,42,0.85);color:var(--text-main);border:1px solid var(--border-subtle);border-radius:999px;padding:0.45rem 1rem;font-size:0.84rem;min-width:260px;"
+        />
+      </div>
+
+      <div id="characters-catalog-grid" class="characters-grid"></div>
+    </section>
+
+    <!-- =======================================================================
+         VISTA 4: BÓVEDA DE LORE, LAS 8 GEMAS Y FOTOS DE APUNTES A MANO
+         ======================================================================= -->
+    <section id="view-lore" class="view-section" aria-label="Bóveda de Lore, Gemas y Apuntes">
+      <h2 class="section-heading">💎 Las 8 Gemas del Arcoíris (Canon)</h2>
+      <p class="section-subtitle">
+        Artefactos de consciencia forjados en el Árbol de Ámbar durante el sacrificio de Protón en el Capítulo 0 y despertados a lo largo de la saga.
+      </p>
+      <div id="gems-catalog-grid" class="gems-grid"></div>
+
+      <h2 class="section-heading">📸 Bóveda de Fotografías y Apuntes a Mano del Autor</h2>
+      <p class="section-subtitle">
+        Espacio preparado para subir y previsualizar las fotografías de tus notas a mano sobre el lore de <em>Proyecto Protón</em> y las continuaciones de la saga.
+        También puedes guardar los archivos directamente en <code>saga/lore_y_apuntes/fotos_apuntes_mano/</code>.
+      </p>
+
+      <div class="lore-upload-zone">
+        <div style="font-size:2.2rem;margin-bottom:0.5rem;">📷 ✍️ 📓</div>
+        <h3 style="margin-bottom:0.4rem;">Cargar Fotografías de Apuntes y Bocetos a Mano</h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;max-width:640px;margin:0 auto 1rem;">
+          Selecciona una o varias fotos desde tu equipo para visualizarlas en esta galería interactiva o compártelas directamente en el chat para transcribirlas a <code>saga/lore_y_apuntes/transcripciones_apuntes/</code> e integrarlas al canon.
+        </p>
+        <label for="handwritten-photo-input" class="btn-primary" style="cursor:pointer;display:inline-flex;">
+          📂 Seleccionar Fotografías de Apuntes
+        </label>
+        <input
+          type="file"
+          id="handwritten-photo-input"
+          accept="image/*"
+          multiple
+          style="display:none;"
+        />
+      </div>
+
+      <div id="lore-notes-grid" class="lore-notes-grid"></div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       REPRODUCTOR FLOTANTE DE AUDIOLIBRO & NARRADOR READ-ALONG (HU-4.4)
+       ======================================================================= -->
+  <aside class="audio-dock" aria-label="Controles de Audiolibro y Narración Sincronizada">
+    <div class="audio-dock-inner">
+      <div class="audio-status">
+        <span id="audio-pulse-dot" class="audio-pulse"></span>
+        <span id="audio-now-playing" class="audio-now-playing">
+          🎧 Audiolibro listo (haz clic en 🔊 en cualquier párrafo o presiona Play)
+        </span>
+      </div>
+
+      <div class="audio-controls">
+        <button type="button" id="btn-audio-prev" class="audio-btn" title="Párrafo anterior">⏮️</button>
+        <button type="button" id="btn-audio-play" class="audio-btn primary" title="Reproducir / Pausar narración Read-Along">▶️</button>
+        <button type="button" id="btn-audio-next" class="audio-btn" title="Siguiente párrafo">⏭️</button>
+        <button type="button" id="btn-audio-stop" class="audio-btn" title="Detener narración">⏹️</button>
+
+        <select id="tts-rate-select" class="audio-select" aria-label="Velocidad de narración">
+          <option value="0.85">0.85x</option>
+          <option value="1" selected>1.0x Normal</option>
+          <option value="1.15">1.15x</option>
+          <option value="1.3">1.30x Rápido</option>
+        </select>
+
+        <select id="mp3-track-select" class="audio-select" aria-label="Pistas MP3 ElevenLabs generadas">
+          <option value="">🎵 Pistas MP3 ElevenLabs...</option>
+        </select>
+        <audio id="native-mp3-player" controls style="height:30px;max-width:190px;display:none;"></audio>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Base de datos compilada por book_builder.py + Lógica de la aplicación -->
+  <script src="assets/data/proton_data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,17 +1,30 @@
 {
+  "id": "gil",
   "nombre": "Gilberto Gil González Dávila",
+  "archivo": "gilberto_gil_gonzalez_davila",
   "categoria": "Personaje principal",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
     "nombre_completo": "Gilberto González Dávila",
-    "alias": "Gil, Ojos de Ámbar, Hijo de los Españoles",
-    "edad": "Aproximadamente 14 años",
-    "apariencia": "Cabello oscuro, piel acaramelada, ojos amarillos brillantes, complexión atlética",
-    "personalidad": "Seguro de sí mismo, carismático, leal y atormentado por su identidad",
-    "trasfondo": "Gemelo de Cisco, criado por una pareja española y luego confrontado con su origen indígena",
-    "motivacion": "Encontrar su verdadera identidad y redimirse de su vínculo con la expedición española",
-    "habilidades": "Espadachín, estratega militar, líder nato, conocimiento de navegación",
-    "arco": "De conquistador confundido a defensor de los pueblos indígenas",
-    "relaciones": "Cisco, Nawa, Don Paco, Curré, Pipo/Ramsés"
+    "alias": "Gil, Gilberth, Ojos de Ámbar, Hijo de los Españoles",
+    "edad": "Recién nacido en Cap. 0; ~14 años cuando reaparece en 1499 (tras viajar un año antes)",
+    "apariencia": "Cabello oscuro, piel acaramelada, ojos amarillos como zafiros de ámbar, complexión atlética, espada española y adornos de oro",
+    "personalidad": "Seguro de sí mismo, carismático, leal, estratega y noble",
+    "trasfondo": "Gemelo de Cisco e hijo de Shilea; adoptado en el hospital en 1990 por la pareja española González Dávila y arrastrado al siglo XV por el Cubo Amarillo junto a su padre adoptivo",
+    "motivacion": "Reencontrarse con su verdadera familia, redimir su vínculo con la expedición española y proteger el secreto de las tribus",
+    "habilidades": "Maestro espadachín, táctica naval y militar, mando de tropa y canalización de la Gema Morada",
+    "arco": "De joven comandante confundido por las mentiras de Pipo a hermano leal y guardián histórico que desvía a la expedición española",
+    "relaciones": "Cisco, Nawa, Don Paco, Shilea, Cristóbal Colón, Curré, Pipo/Ramsés, Dulcehe La Biriteca"
   },
   "atributos": {
     "caracteristicas": [
@@ -19,7 +32,7 @@
       "Estratega",
       "Leal",
       "Valiente",
-      "Confundido pero noble"
+      "Noble"
     ],
     "estadisticas": {
       "fuerza": 8,
@@ -32,19 +45,45 @@
     "habilidades_especiales": [
       "Espadachín",
       "Táctica militar",
-      "Navegación"
+      "Navegación en barco-submarino"
     ],
     "poderes": [
-      "Gema Morada de Creación"
+      "Gema Morada de la Creación"
     ],
     "funciones": [
       "Guerrero",
-      "Líder",
-      "Puente cultural"
+      "Comandante táctico",
+      "Puente entre mundos"
     ],
-    "color": "Violeta"
+    "color": "Violeta",
+    "hex": "#a855f7"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 5,
+      "rol_visible": "Gemelo de Ojos Amarillos adoptado en 1990",
+      "faccion_visible": "Familia González Dávila",
+      "bio": "Nacido dos minutos antes que Cisco en el hospital de San José. Fue adoptado la misma noche por una adinerada pareja española que pagó con monedas de oro antiguas."
+    },
+    {
+      "hasta_capitulo": 6,
+      "rol_visible": "Joven Capitán del Barco de Vapor y Hermano Reencontrado",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Desembarca en el Valle de Diquís en 1499 para advertir a Cisco de la traición de Pipo y se une a la misión rumbo al Templo del Oeste en la Isla de Nicoya."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Portador de la Gema Morada y Guardián de la Mentira Histórica",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Encuentra la carta de su madre Shilea en la Isla de Nicoya, reclama la Gema Morada, combate en las ocho repeticiones de la Playa del Encuentro y asume la misión de desviar a los españoles y buscar a su tía Dulcehe La Biriteca."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Reencuentro con Cisco y Nawa, obtención de la Gema Morada y partida en las carabelas para proteger el rastro indígena.",
+    "libro_2": "Su infiltración histórica como Gil González Dávila en el siglo XVI, la búsqueda de Dulcehe La Biriteca y el Valle Central (Cartago).",
+    "libro_3": "Conexión transgeneracional desde España hasta el desenlace de 2033."
   },
   "notas": [
-    "Representa la identidad dual y la reconciliación"
+    "Representa la identidad dual, el honor táctico y la reconciliación de la sangre."
   ]
 }

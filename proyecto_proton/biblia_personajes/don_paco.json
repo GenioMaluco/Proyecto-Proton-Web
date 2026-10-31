@@ -1,51 +1,91 @@
 {
+  "id": "don_paco",
   "nombre": "Don Paco",
+  "archivo": "don_paco",
   "categoria": "Personaje principal",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
     "nombre_completo": "Francisco Paco",
-    "alias": "Don Paco, Jawa Paco, El Guardián del Tiempo",
-    "edad": "Aparenta 70 años, pero su edad real es incierta",
-    "apariencia": "Hombre mayor, espalda algo encorvada, ojos negros profundos, bata de laboratorio o ropa sencilla",
+    "alias": "Don Paco, Jawa Paco, El Guardián del Tiempo, El Primogénito",
+    "edad": "Aparenta ~70 años en 1990 y ~33 años en su manifestación de 1499; ha viajado por el círculo del tiempo durante tres mil años",
+    "apariencia": "En 1990: conserje mayor de espalda algo encorvada, ojos negros profundos e inmensos; en 1499: hombre joven de 33 años con vestimenta mestiza atemporal",
     "personalidad": "Sabio, paciente, enigmático, bondadoso y con humor socarrón",
-    "trasfondo": "Guardia del equilibrio temporal, mentor de los hermanos y guía en distintas épocas",
-    "motivacion": "Proteger el flujo del tiempo y preparar a los jóvenes para su misión",
-    "habilidades": "Dominio de la física del tiempo, hipnosis, manipulación temporal y estrategia",
-    "arco": "Mentor que aprende a ceder el relevo a sus pupilos",
-    "relaciones": "Cisco, Nawa, Gil, Shilea, Pipo/Ramsés, Doctor Miranda"
+    "trasfondo": "Maestro Jawa que cuidó a Shilea en 1990, adoptó a Cisco en el hospital, crio a Nawa en 1499 y tejió las piezas del tablero temporal (incluyendo la hipnosis del navegante en Las Vegas en 1989)",
+    "motivacion": "Guiar a los tres hermanos para romper el bucle de Ramsés y salvar la semilla de la humanidad sin destruir su libre albedrío",
+    "habilidades": "Dominio de la física y los bucles del tiempo, hipnosis/magia mental benévola, estrategia milenaria y omnisciencia paradójica",
+    "arco": "El gran arquitecto del destino que prepara el camino con cartas precisas al segundo y finalmente entrega el relevo a sus hijos adoptivos",
+    "relaciones": "Cisco, Nawa, Gil, Shilea, Doctor Miranda, Pipo/Ramsés, Cristóbal Colón"
   },
   "atributos": {
     "caracteristicas": [
       "Sabio",
       "Paciente",
       "Enigmático",
-      "Misterioso",
-      "Mentor"
+      "Amoroso",
+      "Maestro"
     ],
     "estadisticas": {
       "fuerza": 3,
       "inteligencia": 10,
       "agilidad": 3,
       "resistencia": 4,
-      "espiritu": 9
+      "espiritu": 10
     },
     "puntos_salud": 85,
     "habilidades_especiales": [
       "Manipulación temporal",
       "Hipnosis",
-      "Estrategia",
-      "Conocimiento ancestral"
+      "Estrategia trans-temporal",
+      "Cartas proféticas"
     ],
     "poderes": [
-      "Control del tiempo"
+      "Círculo del Tiempo (El Ocho Acostado)"
     ],
     "funciones": [
       "Mentor",
-      "Guardián",
-      "Diseñador del destino"
+      "Padre adoptivo",
+      "Guardián del Tiempo"
     ],
-    "color": "Índigo"
+    "color": "Índigo",
+    "hex": "#6366f1"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 1,
+      "rol_visible": "Conserje del Hospital y Padre Adoptivo de Cisco",
+      "faccion_visible": "San José 1990",
+      "bio": "Conserje del hospital de San José que entrega al Dr. Miranda una carta prediciendo el nacimiento de los gemelos, adopta a Cisco y lo cría con amor en Curridabat."
+    },
+    {
+      "hasta_capitulo": 8,
+      "rol_visible": "Jawa Paco, Maestro del Tiempo",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Se revela que en 1499 fue el maestro Jawa de Nawa y mentor anterior de Pipo, además de haber protegido a Shilea en San José antes de que diera a luz."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "El Primogénito / Viajero del Círculo de 3,000 Años",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Aparece en la playa de 1499 como un joven de 33 años revelando cómo recorrió el círculo del tiempo durante tres milenios y cómo hipnotizó en 1989 al falso Colón para preparar la salvación de las tribus."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Mentor de los tres hermanos y autor de las cartas al Dr. Miranda y a Nawa.",
+    "libro_2": "Sus viajes previos por los 3,000 años del bucle temporal y el origen de su rivalidad con Ramsés.",
+    "libro_3": "El cierre de la ecuación del universo en el horizonte de 2033."
   },
   "notas": [
-    "Representa la sabiduría y el equilibrio del tiempo"
+    "Representa la sabiduría paternal, la fe en las nuevas generaciones y el equilibrio del tiempo."
   ]
 }

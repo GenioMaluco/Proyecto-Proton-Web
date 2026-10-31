@@ -1,0 +1,66 @@
+{
+  "id": "dulcehe",
+  "nombre": "Dulcehe La Biriteca",
+  "archivo": "dulcehe_la_biriteca",
+  "categoria": "Personaje secundario",
+  "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+  "primera_aparicion": 7,
+  "capitulos_presente": [
+    7
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
+  "descripcion": {
+    "nombre_completo": "Dulcehe La Biriteca",
+    "alias": "La Biriteca, Hermana de Shilea",
+    "edad": "Joven / Adulta en el siglo XVI",
+    "apariencia": "Mujer guerrera y sabia de sangre indígena costarricense",
+    "personalidad": "Valiente, guardiana de la memoria y las raíces",
+    "trasfondo": "Hermana de Ditsowe Shilea y tía materna de Cisco, Gil y Nawa; mencionada en la carta sagrada de Shilea en la Isla de Nicoya",
+    "motivacion": "Preservar las raíces en el Valle Central (Cartago) para que el futuro no colapse por el anacronismo de la partida de las tribus",
+    "habilidades": "Sabiduría ancestral, resistencia cultural y liderazgo",
+    "arco": "Encomendada por Shilea a Gil como misión clave para el futuro inmediato de la saga",
+    "relaciones": "Shilea, Gil, Cisco, Nawa"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Sabia",
+      "Guerrera",
+      "Raíz ancestral",
+      "Clave del futuro"
+    ],
+    "estadisticas": {
+      "fuerza": 6,
+      "inteligencia": 8,
+      "agilidad": 7,
+      "resistencia": 8,
+      "espiritu": 9
+    },
+    "puntos_salud": 85,
+    "habilidades_especiales": [
+      "Custodia del linaje en el Valle Central"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Eslabón hacia el Libro 2",
+      "Tía de los protagonistas"
+    ],
+    "color": "Violeta",
+    "hex": "#9333ea"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Hermana de Shilea y Misión Futura de Gil en Cartago",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Revelada en la carta de Shilea (Cap. 7.4): Gil deberá buscarla cuando regrese al Valle Central (Cartago) para evitar que el anacronismo borre sus raíces."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Semilla narrativa plantada en la carta de Shilea en el Templo del Oeste.",
+    "libro_2": "Personaje central junto a Gil en la trama del Valle Central y Cartago.",
+    "libro_3": "Ancestro directo de la resistencia cultural que recibe a las Esferas en 2033."
+  },
+  "notas": [
+    "Conecta el Libro 1 Canon directamente con el Libro 2 de la Saga."
+  ]
+}

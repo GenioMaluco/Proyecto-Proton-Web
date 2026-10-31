@@ -1,17 +1,35 @@
 {
+  "id": "cisco",
   "nombre": "Francisco Cisco González Dávila",
+  "archivo": "francisco_cisco_gonzalez_davila",
   "categoria": "Personaje principal",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
     "nombre_completo": "Francisco González Dávila",
     "alias": "Cisco, Ojos de Océano, Ojos de Abismo, Niño del Futuro",
-    "edad": "10 años al inicio; mentalmente madura más rápido",
-    "apariencia": "Cabello rubio claro, piel pálida, ojos azules profundos, lunar en la mejilla izquierda, delgado y menudo",
+    "edad": "Recién nacido en Cap. 0 (1990); 10 años en Cap. 1-9; 53 años en el Epílogo (2033)",
+    "apariencia": "Cabello rubio claro casi blanco, piel pálida, ojos azules profundos como el océano, lunar en la mejilla izquierda, bata de laboratorio",
     "personalidad": "Curioso, analítico, brillante, terco, valiente y emocionalmente sensible",
-    "trasfondo": "Gemelo de Gil, hijo de Shilea, adoptado por Don Paco tras el nacimiento; creció en Curridabat y construyó a Droid",
-    "motivacion": "Cumplir la misión de Don Paco, reunir las ocho gemas y descubrir la verdad sobre su origen",
-    "habilidades": "Inteligencia excepcional, ingeniería, lógica, liderazgo y capacidad para canalizar la Gema Blanca",
-    "arco": "Pasa de niño inseguro a líder decidido que acepta su papel en la historia",
-    "relaciones": "Don Paco, Nawa, Gil, Droid, Loky, Curré, Pipo/Ramsés"
+    "trasfondo": "Gemelo de Gil y hermano de Nawa, hijo de Shilea, adoptado por Don Paco tras nacer en San José el 13 de diciembre de 1990; creció en Curridabat y construyó a Droid",
+    "motivacion": "Cumplir la misión de Don Paco, reunir las ocho gemas arcoíris, salvar a los pueblos indígenas y descubrir la verdad sobre su familia",
+    "habilidades": "Inteligencia excepcional, ingeniería robótica, pensamiento cuántico/lógico, liderazgo táctico y canalización de la Gema Blanca y Azul",
+    "arco": "Pasa de niño inseguro que teme que nadie asista a su fiesta de cumpleaños a estratega cuántico y líder que rompe el bucle de Ramsés",
+    "relaciones": "Don Paco, Nawa, Gil, Droid, Loky, Curré, Tamanco, Pipo/Ramsés, Shilea"
   },
   "atributos": {
     "caracteristicas": [
@@ -33,10 +51,12 @@
       "Ingeniería",
       "Análisis rápido",
       "Liderazgo",
-      "Canalización de gemas"
+      "Canalización de gemas",
+      "Protocolo Paradox"
     ],
     "poderes": [
-      "Gema Blanca de la Transformación"
+      "Gema Blanca de la Transformación",
+      "Gema Azul del Tiempo"
     ],
     "funciones": [
       "Protagonista",
@@ -44,9 +64,41 @@
       "Científico",
       "Líder"
     ],
-    "color": "Azul"
+    "color": "Azul",
+    "hex": "#38bdf8"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 0,
+      "rol_visible": "Recién nacido en el Hospital de San José",
+      "faccion_visible": "San José 1990",
+      "bio": "Uno de los dos bebés gemelos nacidos la noche del 13 de diciembre de 1990. Sus ojos azules profundos llaman la atención de Don Paco, quien lo adopta para protegerlo de los albergues."
+    },
+    {
+      "hasta_capitulo": 3,
+      "rol_visible": "Niño inventor y viajero accidental del tiempo",
+      "faccion_visible": "Aprendices Jawa",
+      "bio": "A tres días de cumplir 10 años en Curridabat, escanea su regalo de cumpleaños junto a su robot Droid y es transportado a octubre de 1499 en el Valle del Diquís, donde conoce a Nawa y al Jawa Pipo."
+    },
+    {
+      "hasta_capitulo": 6,
+      "rol_visible": "Jawa del Futuro y Portador del Valor",
+      "faccion_visible": "Alianza Diquís / Jawas",
+      "bio": "Tras sanar al jaguar Loky extrayendo la Gema Roja y descubrir la traición de Pipo, lidera la decodificación de los manuscritos hacia los Cuatro Templos y se reencuentra con su hermano gemelo Gil."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Maestro de la Gema Blanca y Arquitecto del Protocolo Paradox",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Vence al Guardián del Templo del Norte junto a Tamanco, descubre que Gil y Nawa son sus hermanos hijos de Shilea, derrota el bucle infinito de Ramsés II y lidera el éxodo estelar hasta el retorno de las Esferas Madre en 2033."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Protagonista central; despierta su vocación científica y espiritual en 1499 y regresa a su décimo cumpleaños en 1990.",
+    "libro_2": "Desarrollo de su centro tecnológico en Curridabat entre 1990 y 2033, rastreando anomalías temporales y preparando la red de recepción.",
+    "libro_3": "Reencuentro definitivo en octubre de 2033 durante la llegada de las 8 Esferas Madre sobre el Valle Central y el Delta del Diquís."
   },
   "notas": [
-    "Representa la curiosidad y la transformación"
+    "Representa la curiosidad, la verdad científica y la transformación."
   ]
 }

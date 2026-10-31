@@ -1,17 +1,34 @@
 {
+  "id": "droid",
   "nombre": "Droid",
+  "archivo": "droid",
   "categoria": "Personaje secundario importante",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Droid",
-    "alias": "El Robot, La Mochila, El Sistema",
-    "edad": "Construido dos años antes del viaje",
-    "apariencia": "Robot humanoide, casco de soldador, ojo rojo, capacidad de transformarse",
-    "personalidad": "Leal, práctico, lógico y con un toque de humor",
-    "trasfondo": "Construido por Cisco para acompañarlo y ayudarlo en la misión",
-    "motivacion": "Proteger a Cisco y ayudar a cumplir la misión",
-    "habilidades": "Escaneo multidimensional, traducción, hologramas, armas sónicas y transformaciones",
-    "arco": "Evolutiona su conexión emocional con Cisco y su capacidad de adaptación",
-    "relaciones": "Cisco, Nawa, Gil, Don Paco"
+    "alias": "El Robot, La Mochila, El Amigo de Metal",
+    "edad": "Construido por Cisco dos años antes de 1990 (aunque ya asiste a Don Paco en la noche de 1990)",
+    "apariencia": "Robot humanoide de metro y medio con casco de soldador marcado con la mano blanca de Don Paco y ojo rojo; se pliega en mochila táctica y gafas inteligentes",
+    "personalidad": "Leal, lógico, protector y con sutil sentido del humor",
+    "trasfondo": "Construido por Cisco con piezas de basura electrónica; ganador de la feria de ciencias y compañero inseparable de aventuras",
+    "motivacion": "Proteger a Francisco y ejecutar los cálculos cuánticos necesarios para cumplir la misión",
+    "habilidades": "Modo Mochila + Gafas traductoras, Modo Dron, Exoesqueleto de fibra de carbono con nitrógeno criogénico, Modo Avión de Combate Táctico y Protocolo Paradox",
+    "arco": "De proyecto escolar de reciclaje electrónico a computadora cuántica capaz de absorber 3,000 años de simulaciones de Ramsés en 3 segundos",
+    "relaciones": "Cisco, Don Paco, Nawa, Gil"
   },
   "atributos": {
     "caracteristicas": [
@@ -19,7 +36,7 @@
       "Práctico",
       "Lógico",
       "Adaptable",
-      "Útil"
+      "Cuántico"
     ],
     "estadisticas": {
       "fuerza": 6,
@@ -30,23 +47,43 @@
     },
     "puntos_salud": 100,
     "habilidades_especiales": [
-      "Escaneo",
-      "Traducción",
-      "Transformación",
-      "Soporte táctico"
+      "Escaneo multidimensional",
+      "Traducción cabécar/español",
+      "Exoesqueleto",
+      "Protocolo Paradox"
     ],
     "poderes": [
-      "Hologramas",
-      "Campos de energía"
+      "Domo Holográfico Cuántico",
+      "Cañones Sónicos"
     ],
     "funciones": [
-      "Asistente",
-      "Inteligencia artificial",
-      "Aliado"
+      "Compañero IA",
+      "Soporte táctico",
+      "Traductor y procesador"
     ],
-    "color": "Azul"
+    "color": "Azul",
+    "hex": "#0ea5e9"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 5,
+      "rol_visible": "Robot Compañero y Mochila Táctica de Cisco",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Robot creado por Cisco con piezas recicladas. Al escanear el cubo azul abre el vórtice a 1499 y se transforma en una mochila con gafas traductoras."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Exoesqueleto de Combate y Ejecutor del Protocolo Paradox",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Decodifica los manuscritos ancestrales, despliega el exoesqueleto criogénico en el volcán y proyecta en reversa las siete líneas temporales que colapsan la mente del Faraón."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Soporte tecnológico indispensable en cada prueba y pieza clave del Protocolo Paradox.",
+    "libro_2": "Evolución de su arquitectura de inteligencia artificial junto a Cisco en el siglo XXI.",
+    "libro_3": "Interfaz de comunicación entre la tecnología terrestre y las Esferas Madre de granito."
   },
   "notas": [
-    "Representa la ciencia, la ayuda tecnológica y la lealtad"
+    "Representa la ciencia al servicio de la vida y la lealtad incondicional."
   ]
 }

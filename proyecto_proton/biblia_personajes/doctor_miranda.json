@@ -1,23 +1,32 @@
 {
+  "id": "doctor_miranda",
   "nombre": "Doctor Miranda",
+  "archivo": "doctor_miranda",
   "categoria": "Personaje secundario",
+  "faccion": "San José 1990",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
     "nombre_completo": "Doctor Miranda",
-    "alias": "El Doctor, El Hombre de Ciencia",
-    "edad": "65 años",
-    "apariencia": "Hombre mayor, bata blanca, gafas y expresión seria",
-    "personalidad": "Escéptico, racional y luego convencido por lo inexplicable",
-    "trasfondo": "Médico de guardia en el nacimiento de los gemelos y cómplice de Don Paco",
-    "motivacion": "Actuar según su conciencia aunque eso rompa reglas",
-    "habilidades": "Medicina y cirugía",
-    "arco": "De escéptico a creyente del destino",
-    "relaciones": "Don Paco, los gemelos, la obstetra Rodríguez"
+    "alias": "El Hombre de Ciencia",
+    "edad": "65 años (40 años ejerciendo la medicina)",
+    "apariencia": "Médico mayor con bata blanca y expresión reflexiva",
+    "personalidad": "Racional y escéptico al inicio, pero guiado por una profunda conciencia moral",
+    "trasfondo": "Médico de guardia en el hospital de San José la noche del 13 de diciembre de 1990 que recibe la carta profética de Don Paco",
+    "motivacion": "Evitar que el segundo gemelo sufra en un albergue y darle una oportunidad junto a Don Paco",
+    "habilidades": "Medicina, cirugía neonatal y discernimiento ético",
+    "arco": "Tras comprobar cada predicción cronometrada de la carta de Don Paco, borra los registros del hospital y le entrega a Cisco",
+    "relaciones": "Don Paco, Cisco, Gil, Obstetra Rodríguez"
   },
   "atributos": {
     "caracteristicas": [
       "Racional",
       "Profesional",
-      "Honesto",
+      "Compasivo",
       "Consciente"
     ],
     "estadisticas": {
@@ -34,12 +43,26 @@
     ],
     "poderes": [],
     "funciones": [
-      "Médico",
-      "Cómplice"
+      "Médico de guardia",
+      "Cómplice de Don Paco en 1990"
     ],
-    "color": "Amarillo"
+    "color": "Amarillo",
+    "hex": "#facc15"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Médico de Guardia en San José (1990)",
+      "faccion_visible": "San José 1990",
+      "bio": "Experimenta una serie de déjà vus descritos minuto a minuto en la carta de Don Paco y toma la decisión crucial de confiarle al bebé de ojos azules."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Guardián del secreto del nacimiento de Cisco y Gil en 1990.",
+    "libro_2": "Sus archivos médicos y el rastro del hospital en San José.",
+    "libro_3": "Ecos del inicio del bucle en 1990."
   },
   "notas": [
-    "Personaje clave para la trama del nacimiento"
+    "Su decisión ética abre la puerta a toda la historia de Cisco."
   ]
 }

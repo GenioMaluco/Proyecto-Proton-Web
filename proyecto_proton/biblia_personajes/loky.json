@@ -1,24 +1,37 @@
 {
+  "id": "loky",
   "nombre": "Loky",
+  "archivo": "loky",
   "categoria": "Personaje secundario importante",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 4,
+  "capitulos_presente": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Loky",
-    "alias": "El Jaguar Negro, Espíritu del Valle",
-    "edad": "Indeterminada",
-    "apariencia": "Jaguar negro grande con manchas doradas y ojos amarillos",
-    "personalidad": "Feroz, salvaje al inicio, luego protector y leal",
-    "trasfondo": "Criatura espiritual herida por Pipo/Ramsés y sanada por Cisco",
-    "motivacion": "Proteger a sus aliados y vengar el daño recibido",
-    "habilidades": "Fuerza, velocidad, sigilo y conexión espiritual con la selva",
-    "arco": "De criatura herida a guardián protector",
-    "relaciones": "Nawa, Cisco, Pipo/Ramsés"
+    "alias": "El Espíritu del Jaguar, Guardián del Valle",
+    "edad": "Indeterminada (Ser físico-espiritual)",
+    "apariencia": "Jaguar negro colosal del tamaño de un caballo pequeño, con motas doradas al sol y ojos amarillos intensos",
+    "personalidad": "Feroz contra los traidores, noble, protector y profundamente agradecido con quienes lo sanaron",
+    "trasfondo": "Espíritu guardián del Valle de Diquís al que Pipo incrustó quirúrgicamente la Gema Roja en el lomo para corromperlo",
+    "motivacion": "Proteger a Cisco y Nawa, combatir junto a ella y resguardar el equilibrio espiritual de la selva",
+    "habilidades": "Fuerza y velocidad sobrehumanas, regeneración acelerada, percepción espiritual y capacidad de herir espectros al unirse con Nawa",
+    "arco": "De bestia enjaulada al borde de la muerte a compañero inseparable de Nawa y puente vivo del rayo Índigo",
+    "relaciones": "Cisco, Nawa, Gil, Pipo/Ramsés, La Banshee"
   },
   "atributos": {
     "caracteristicas": [
       "Feroz",
       "Protector",
       "Ágil",
-      "Instintivo",
+      "Espiritual",
       "Leal"
     ],
     "estadisticas": {
@@ -26,26 +39,44 @@
       "inteligencia": 6,
       "agilidad": 9,
       "resistencia": 8,
-      "espiritu": 7
+      "espiritu": 8
     },
     "puntos_salud": 90,
     "habilidades_especiales": [
-      "Sigilo",
-      "Garras",
-      "Fuerza sobrehumana",
-      "Conexión espiritual"
+      "Puente espiritual-físico",
+      "Rastreo olfativo",
+      "Regeneración"
     ],
     "poderes": [
-      "Conexión con la selva"
+      "Conexión con la selva y canalización de la Gema Índigo"
     ],
     "funciones": [
-      "Guardián",
-      "Compañero animal",
-      "Protector"
+      "Guardián espiritual",
+      "Compañero de batalla de Nawa"
     ],
-    "color": "Rojo"
+    "color": "Rojo",
+    "hex": "#dc2626"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 4,
+      "rol_visible": "El Espíritu del Jaguar",
+      "faccion_visible": "Alianza Indígena / Jawas",
+      "bio": "Jaguar negro capturado en la cascada que sufría por la Gema Roja incrustada en su lomo. Tras ser liberado del dolor por Cisco, se convierte en su guardián."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Loky, Guardián Espiritual y Compañero de Nawa",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Hiere a Pipo cuando este roba la Gema Roja, recibe el nombre de Loky tras ser curado por Nawa, derrota junto a ella a la Banshee en el Templo del Sur y parte con Nawa hacia Alfa Centauri."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Sanado por Cisco y Nawa; montura sagrada en el Templo del Sur y en la batalla de la Playa del Encuentro.",
+    "libro_2": "Guardián junto a Nawa en Alfa Centauri (mientras en 1990 Don Paco regala un cachorro de jaguar a Cisco).",
+    "libro_3": "Retorno del espíritu del jaguar en la convergencia de 2033."
   },
   "notas": [
-    "Representa la fuerza bruta y el vínculo con la naturaleza"
+    "Representa el puente entre el mundo espiritual y el mundo físico."
   ]
 }

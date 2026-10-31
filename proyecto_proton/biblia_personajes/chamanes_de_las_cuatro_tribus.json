@@ -1,24 +1,37 @@
 {
+  "id": "chamanes",
   "nombre": "Chamanes de las cuatro tribus",
+  "archivo": "chamanes_de_las_cuatro_tribus",
   "categoria": "Grupo secundario",
+  "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+  "primera_aparicion": 4,
+  "capitulos_presente": [
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Chamanes de las tribus Diquís, Cabécares, Bribris y Borucas",
-    "alias": "Chamanes, Ancianos Sabios",
-    "edad": "Ancianos",
-    "apariencia": "Pinturas faciales, tocados de plumas, ropas ceremoniales y collares de jade",
-    "personalidad": "Sabios, reservados y respetuosos de la tradición",
-    "trasfondo": "Guardianes del conocimiento ancestral y participantes en la profecía",
-    "motivacion": "Preservar la cultura y la vida de su pueblo",
-    "habilidades": "Hierbas, rituales, astronomía y lenguaje sagrado",
-    "arco": "Facilitan el camino de las tribus hacia la supervivencia",
-    "relaciones": "Curré, Cisco, Nawa, Gil"
+    "alias": "El Consejo de Ancianos, Guardianes del Templo del Este",
+    "edad": "Ancianos centenarios (destacando el Chamán Supremo Cabécar de piel como corteza)",
+    "apariencia": "Pinturas ceremoniales, collares de jade, tocados de plumas y más tarde túnicas de fibra de luz en 2033",
+    "personalidad": "Sabios, severos ante la soberbia, pero profundamente justos y fraternales ante la humildad",
+    "trasfondo": "Custodios de la Esfera de Granito en Talamanca y de la Gema Naranja de la Sabiduría",
+    "motivacion": "Guiar espiritualmente a los pueblos hacia la unión y hacia las estrellas",
+    "habilidades": "Rituales ancestrales, astronomía, prueba de la esfera de agua salada y navegación estelar",
+    "arco": "Juzgan la soberbia de Curré, lo perdonan con lágrimas al ver su humildad y en 2033 reaparecen riendo junto a él en la transmisión mundial",
+    "relaciones": "Rey Curré, Cisco, Nawa, Gil"
   },
   "atributos": {
     "caracteristicas": [
       "Sabios",
       "Tradicionales",
-      "Reservados",
-      "Espirituales"
+      "Espirituales",
+      "Justos"
     ],
     "estadisticas": {
       "fuerza": 3,
@@ -29,20 +42,34 @@
     },
     "puntos_salud": 80,
     "habilidades_especiales": [
-      "Rituales",
-      "Astronomía",
-      "Herboristería"
+      "Ritual Shkina",
+      "Astronomía Diquís/Cabécar",
+      "Custodia de la Esfera"
     ],
     "poderes": [
       "Sabiduría ancestral"
     ],
     "funciones": [
-      "Guía espiritual",
-      "Guardia cultural"
+      "Consejo espiritual",
+      "Custodios del Templo del Este"
     ],
-    "color": "Verde"
+    "color": "Naranja",
+    "hex": "#fb923c"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Consejo de Sabios de las Cuatro Tribus",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Custodios de la tradición y del Templo del Este en Talamanca. Someten al Rey Curré a la prueba de la esfera de agua salada y le entregan la Gema Naranja."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Unificadores espirituales del éxodo hacia Alfa Centauri.",
+    "libro_2": "Sabios de las túnicas de fibra de luz en las Esferas Madre.",
+    "libro_3": "Acompañan al Rey Curré en la transmisión global de 2033."
   },
   "notas": [
-    "Grupo espiritual clave para la historia"
+    "En el sueño de cumpleaños de Cisco son los ancianos del vecindario que leen hojas de café."
   ]
 }

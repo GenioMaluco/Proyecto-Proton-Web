@@ -1,16 +1,27 @@
 {
+  "id": "tamanco",
   "nombre": "Tamanco",
+  "archivo": "tamanco",
   "categoria": "Personaje secundario importante",
+  "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+  "primera_aparicion": 6,
+  "capitulos_presente": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Tamanco",
-    "alias": "El Guerrero Leal",
-    "edad": "Adulto, aproximadamente 30 años",
-    "apariencia": "Hombre fornido, piel oscura, pinturas de guerra, adornos de plumas y conchas",
-    "personalidad": "Valiente, leal, respetuoso y curioso",
-    "trasfondo": "Guerrero Boruca que guia a Cisco en el Templo del Norte",
-    "motivacion": "Proteger a su pueblo y ayudar a Cisco en su misión",
-    "habilidades": "Combate cuerpo a cuerpo, conocimiento de la montaña y la selva",
-    "arco": "Su lealtad es clave para la batalla final",
+    "alias": "El Guerrero Leal, Cazador de las Montañas Humeantes",
+    "edad": "Adulto, ~30 años",
+    "apariencia": "Guerrero Boruca fornido, pinturas de guerra, adornos de plumas y pesada maza de piedra volcánica",
+    "personalidad": "Valiente, leal, curioso por la ciencia y cumplidor de su palabra ('siete oraciones')",
+    "trasfondo": "Experimentado cazador de las faldas del volcán que se ofrece como guía de Cisco hacia el Templo del Norte",
+    "motivacion": "Proteger a Cisco en el volcán y defender la libertad de los pueblos indígenas",
+    "habilidades": "Fuerza descomunal, rastreo en montaña volcánica y combate con maza de piedra",
+    "arco": "Entra al volcán al cumplirse las siete oraciones y provoca el torrente de agua subterránea que permite a Cisco vencer al Gólem de Granito",
     "relaciones": "Cisco, Curré, Nawa, Gil"
   },
   "atributos": {
@@ -19,7 +30,7 @@
       "Fuerte",
       "Valiente",
       "Respetuoso",
-      "Práctico"
+      "Curioso"
     ],
     "estadisticas": {
       "fuerza": 8,
@@ -30,17 +41,31 @@
     },
     "puntos_salud": 88,
     "habilidades_especiales": [
-      "Combate",
-      "Guía de montaña"
+      "Combate con maza volcánica",
+      "Guía de alta montaña"
     ],
     "poderes": [],
     "funciones": [
-      "Guerrero",
-      "Guía"
+      "Guerrero Boruca",
+      "Compañero de Cisco en el Templo del Norte"
     ],
-    "color": "Verde"
+    "color": "Verde",
+    "hex": "#22c55e"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Guerrero Boruca y Aliado del Templo del Norte",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Guía a Cisco hacia la Cordillera Volcánica Central y salva su vida al derribar una fisura de agua subterránea sobre el Gólem de Granito. En el sueño de cumpleaños de 1990 aparece como el carnicero del barrio."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Héroe fundamental en la obtención de la Gema Blanca.",
+    "libro_2": "Representante de los guerreros Borucas en el nuevo mundo.",
+    "libro_3": "Parte de la memoria y linaje que retorna en 2033."
   },
   "notas": [
-    "Representa la fuerza y la lealtad entre pueblos"
+    "Demuestra que la tecnología de Cisco necesita de la fuerza y lealtad humana para triunfar."
   ]
 }

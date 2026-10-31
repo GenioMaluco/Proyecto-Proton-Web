@@ -1,46 +1,74 @@
 {
-  "nombre": "Tribu Diquís",
+  "id": "tribu_diquis",
+  "nombre": "Tribu Diquís y Pueblos Aliados",
+  "archivo": "tribu_diquis",
   "categoria": "Grupo secundario",
+  "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+  "primera_aparicion": 2,
+  "capitulos_presente": [
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
-    "nombre_completo": "Pueblo Diquís",
-    "alias": "Los Diquís, Pueblo de las Esferas",
+    "nombre_completo": "Pueblos Diquís, Cabécares, Bribris y Borucas",
+    "alias": "El Pueblo de las Esferas, La Semilla Humana",
     "edad": "Colectivo de todas las edades",
-    "apariencia": "Piel morena, cabello negro, vestidos con taparrabos y adornos de oro y jade",
-    "personalidad": "Valientes, hospitalarios y desconfiados de los extraños",
-    "trasfondo": "Descendientes de los constructores de esferas y aliados de los hermanos",
-    "motivacion": "Sobrevivir y preservar su cultura",
-    "habilidades": "Agricultura, tallado de piedra, guerra y astronomía",
-    "arco": "Pasan de víctimas del destino a constructores de su propia salvación",
-    "relaciones": "Curré, Cisco, Nawa, Gil"
+    "apariencia": "Guerreros, mujeres, niños y sabios con adornos de oro y jade, máscaras de jaguar y macanas de piedra",
+    "personalidad": "Valientes, resilientes, hospitalarios y unidos frente a la adversidad",
+    "trasfondo": "Herederos de los Jawas Ancestrales en el Valle del Río Grande de Térraba y las cordilleras de Costa Rica",
+    "motivacion": "Sobrevivir al genocidio inminente y llevar la semilla humana hacia Alfa Centauri, Orión y las Pléyades",
+    "habilidades": "Talla de esferas de piedra, astronomía, agricultura y combate en falange con arcos y macanas",
+    "arco": "Luchan valientemente en las repeticiones de la Playa del Encuentro y ascienden de ocho en ocho a través de las esferas-cápsula durante la Luna Carmesí",
+    "relaciones": "Rey Curré, Cisco, Nawa, Gil, Tamanco"
   },
   "atributos": {
     "caracteristicas": [
-      "Hospitalarios",
       "Valientes",
-      "Conectados con la naturaleza",
-      "Resilientes"
+      "Resilientes",
+      "Astrónomos",
+      "Unidos"
     ],
     "estadisticas": {
       "fuerza": 7,
       "inteligencia": 7,
-      "agilidad": 5,
-      "resistencia": 7,
+      "agilidad": 6,
+      "resistencia": 8,
       "espiritu": 8
     },
     "puntos_salud": 85,
     "habilidades_especiales": [
-      "Taller de piedra",
-      "Astronomía",
-      "Guerra"
+      "Talla de esferas",
+      "Defensa del Valle",
+      "Viaje interestelar"
     ],
     "poderes": [],
     "funciones": [
-      "Pueblo aliado",
-      "Población principal"
+      "Pueblo protagonista",
+      "Viajeros de las Esferas Madre"
     ],
-    "color": "Naranja"
+    "color": "Naranja",
+    "hex": "#f59e0b"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Los Cuatro Pueblos Unidos del Valle y las Montañas",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Habitantes ancestrales de Costa Rica que se unen bajo el liderazgo de Curré y los tres hermanos para vencer a Ramsés y partir hacia las estrellas en las cápsulas de transferencia."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Protagonistas colectivos del gran éxodo de la Luna Carmesí.",
+    "libro_2": "Florecimiento de su civilización avanzada en Alfa Centauri.",
+    "libro_3": "Regreso a la Tierra en octubre de 2033."
   },
   "notas": [
-    "Grupo cultural fundamental de la historia"
+    "Las esferas de piedra de Costa Rica son los cascarones inertes que dejaron sus naves al partir."
   ]
 }

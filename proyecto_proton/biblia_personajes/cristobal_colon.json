@@ -1,24 +1,34 @@
 {
-  "nombre": "Cristóbal Colón",
+  "id": "cristobal_colon",
+  "nombre": "Cristóbal Colón (El Hombre del Catalejo)",
+  "archivo": "cristobal_colon",
   "categoria": "Personaje secundario",
+  "faccion": "Expedición Española 1499",
+  "primera_aparicion": 5,
+  "capitulos_presente": [
+    5,
+    6,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
-    "nombre_completo": "Cristóbal Colón",
-    "alias": "El Almirante, El Padre Adoptivo de Gil",
+    "nombre_completo": "Navegante Genovés / Padre Adoptivo de Gil",
+    "alias": "Cristóbal Colón, El Hombre del Catalejo, El Almirante",
     "edad": "Adulto",
-    "apariencia": "Hombre europeo con barba, ropas de navegante y catalejo",
-    "personalidad": "Ambicioso, crédulo y algo pomposo",
-    "trasfondo": "Navegante genovés manipulado por Don Paco para que creyera ser Colón y zarpara a América",
-    "motivacion": "Cumplir su misión divina de encontrar nuevas rutas y riquezas",
-    "habilidades": "Navegación, liderazgo de tripulación",
-    "arco": "Es una pieza en el tablero de Don Paco",
+    "apariencia": "Hombre de cabello negro peinado hacia atrás, vestimenta oscura anacrónica (estilo siglo XIX) y catalejo",
+    "personalidad": "Autoritario, ambicioso y bajo sugestión hipnótica profunda",
+    "trasfondo": "Navegante genovés con delirios de grandeza al que Don Paco conoció en un casino de Las Vegas en 1989 e hipnotizó para que creyera ser Cristóbal Colón y zarpara hacia Costa Rica tres años antes",
+    "motivacion": "Cumplir la misión implantada en su mente y regresar a España reportando no haber encontrado nada",
+    "habilidades": "Navegación transatlántica y mando de flota",
+    "arco": "Se revela primero como el misterioso hombre del catalejo y padre adoptivo de Gil, y finalmente en el Capítulo 9 Don Paco revela la verdad sobre su hipnosis en Las Vegas",
     "relaciones": "Gil, Don Paco, Pipo/Ramsés"
   },
   "atributos": {
     "caracteristicas": [
-      "Ambicioso",
       "Autoritario",
       "Navegante",
-      "Crédulo"
+      "Hipnotizado",
+      "Enigmático"
     ],
     "estadisticas": {
       "fuerza": 5,
@@ -29,16 +39,43 @@
     },
     "puntos_salud": 74,
     "habilidades_especiales": [
-      "Navegación"
+      "Navegación",
+      "Mando naval"
     ],
     "poderes": [],
     "funciones": [
-      "Explorador",
-      "Capitán"
+      "Padre adoptivo de Gil",
+      "Pieza de ajedrez temporal de Don Paco"
     ],
-    "color": "Amarillo"
+    "color": "Amarillo",
+    "hex": "#ca8a04"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 5,
+      "rol_visible": "El Misterioso Hombre del Catalejo",
+      "faccion_visible": "Expedición Española 1499",
+      "bio": "Hombre de vestimenta anacrónica que observa a Cisco desde la cubierta de un barco de propulsión a vapor de 1802 mientras recibe a Pipo."
+    },
+    {
+      "hasta_capitulo": 8,
+      "rol_visible": "Cristóbal, Padre Adoptivo de Gil",
+      "faccion_visible": "Expedición Española 1499",
+      "bio": "Padre adoptivo de Gil que llegó un año antes con el Cubo Amarillo, entregó la gema a Pipo y trajo tres carabelas desde España."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Navegante Hipnotizado por Don Paco en Las Vegas (1989)",
+      "faccion_visible": "Expedición Española 1499",
+      "bio": "Don Paco revela que lo conoció en un casino de Las Vegas en 1989 y lo hipnotizó para adelantar la expedición tres años y permitir que Gil desviara el curso de la historia."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Anomalía temporal viviente diseñada por Don Paco.",
+    "libro_2": "Su regreso a Europa junto a Gil para encubrir la desaparición de las tribus.",
+    "libro_3": "Efecto mariposa de su reporte en la historia moderna."
   },
   "notas": [
-    "Sirve como herramienta de la manipulación temporal"
+    "Uno de los giros de trama más sorprendentes del Capítulo 9."
   ]
 }

@@ -1,24 +1,32 @@
 {
+  "id": "obstetra_rodriguez",
   "nombre": "Obstetra Rodríguez",
+  "archivo": "obstetra_rodriguez",
   "categoria": "Personaje secundario",
+  "faccion": "San José 1990",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
-    "nombre_completo": "Rodríguez",
-    "alias": "La Obstetra, La Enfermera",
+    "nombre_completo": "Enfermera / Obstetra Rodríguez",
+    "alias": "La Obstetra",
     "edad": "Adulta",
-    "apariencia": "Uniforme de enfermera, expresión seria y profesional",
-    "personalidad": "Práctica, discreta y leal a sus intereses",
-    "trasfondo": "Presente en el parto de los gemelos y testigo del trato con los González Dávila",
-    "motivacion": "Mantenerse al margen y obtener un beneficio económico",
-    "habilidades": "Asistencia médica y discreción",
-    "arco": "Su silencio permite que la historia avance",
-    "relaciones": "Doctor Miranda, Don Paco, los gemelos"
+    "apariencia": "Uniforme de enfermera de maternidad",
+    "personalidad": "Práctica, discreta y pragmática",
+    "trasfondo": "Asiste en el parto de Shilea y gestiona la entrega del primer gemelo (Gil) a la pareja española González Dávila",
+    "motivacion": "Resolver la situación sin escándalos y asegurar su propio beneficio con las monedas de oro",
+    "habilidades": "Asistencia obstétrica y discreción",
+    "arco": "Su silencio pagado con oro antiguo permite que el registro de ambos niños desaparezca sin investigaciones",
+    "relaciones": "Doctor Miranda, Don Paco, Cisco, Gil"
   },
   "atributos": {
     "caracteristicas": [
       "Discreta",
-      "Profesional",
       "Práctica",
-      "Leal a su interés"
+      "Pragmática"
     ],
     "estadisticas": {
       "fuerza": 1,
@@ -33,12 +41,26 @@
     ],
     "poderes": [],
     "funciones": [
-      "Enfermera",
-      "Testigo"
+      "Testigo del nacimiento",
+      "Intermediaria de la adopción de Gil"
     ],
-    "color": "Azul"
+    "color": "Azul",
+    "hex": "#60a5fa"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Obstetra del Hospital Capitalino",
+      "faccion_visible": "San José 1990",
+      "bio": "Propone entregar uno de los gemelos a los turistas españoles y recibe monedas de oro antiguas a cambio de su silencio."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Pieza clave en la separación inicial de los gemelos en 1990.",
+    "libro_2": "Mención en la reconstrucción del pasado de Cisco y Gil.",
+    "libro_3": "Parte de los recuerdos de origen."
   },
   "notas": [
-    "Es una pieza menor que facilita el desarrollo del conflicto"
+    "En el despertar de cumpleaños de Cisco (Cap. 9) aparece como la enfermera que lo cuidaba de niño."
   ]
 }

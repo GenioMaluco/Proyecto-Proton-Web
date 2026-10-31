@@ -1,78 +1,443 @@
 {
-  "libro": "Proyecto Proton",
-  "cantidad": 18,
+  "libro": "Proyecto Proton (Canon - Libro 1 de la Saga)",
+  "cantidad": 20,
   "personajes": [
     {
+      "id": "cisco",
       "nombre": "Francisco Cisco González Dávila",
+      "categoria": "Personaje principal",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 0,
       "archivo": "francisco_cisco_gonzalez_davila.json"
     },
     {
+      "id": "nawa",
       "nombre": "Boenawa Shilea",
+      "categoria": "Personaje principal",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 2,
       "archivo": "boenawa_shilea.json"
     },
     {
+      "id": "gil",
       "nombre": "Gilberto Gil González Dávila",
+      "categoria": "Personaje principal",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 0,
       "archivo": "gilberto_gil_gonzalez_davila.json"
     },
     {
+      "id": "don_paco",
       "nombre": "Don Paco",
+      "categoria": "Personaje principal",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 0,
       "archivo": "don_paco.json"
     },
     {
+      "id": "curre",
       "nombre": "Rey Curré",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "primera_aparicion": 4,
       "archivo": "rey_curre.json"
     },
     {
+      "id": "droid",
       "nombre": "Droid",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 0,
       "archivo": "droid.json"
     },
     {
+      "id": "loky",
       "nombre": "Loky",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 4,
       "archivo": "loky.json"
     },
     {
+      "id": "pipo_ramses",
       "nombre": "Pipo Ramsés",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Fuerzas del Bucle / Antagonistas",
+      "primera_aparicion": 2,
       "archivo": "pipo_ramses.json"
     },
     {
-      "nombre": "Shilea",
+      "id": "shilea",
+      "nombre": "Ditsowe Shilea",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Héroes del Tiempo / Jawas",
+      "primera_aparicion": 0,
       "archivo": "shilea.json"
     },
     {
+      "id": "tamanco",
       "nombre": "Tamanco",
+      "categoria": "Personaje secundario importante",
+      "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "primera_aparicion": 6,
       "archivo": "tamanco.json"
     },
     {
+      "id": "doctor_miranda",
       "nombre": "Doctor Miranda",
+      "categoria": "Personaje secundario",
+      "faccion": "San José 1990",
+      "primera_aparicion": 0,
       "archivo": "doctor_miranda.json"
     },
     {
+      "id": "obstetra_rodriguez",
       "nombre": "Obstetra Rodríguez",
+      "categoria": "Personaje secundario",
+      "faccion": "San José 1990",
+      "primera_aparicion": 0,
       "archivo": "obstetra_rodriguez.json"
     },
     {
-      "nombre": "Cristóbal Colón",
+      "id": "cristobal_colon",
+      "nombre": "Cristóbal Colón (El Hombre del Catalejo)",
+      "categoria": "Personaje secundario",
+      "faccion": "Expedición Española 1499",
+      "primera_aparicion": 5,
       "archivo": "cristobal_colon.json"
     },
     {
+      "id": "dulcehe",
+      "nombre": "Dulcehe La Biriteca",
+      "categoria": "Personaje secundario",
+      "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "primera_aparicion": 7,
+      "archivo": "dulcehe_la_biriteca.json"
+    },
+    {
+      "id": "quepoa",
+      "nombre": "Rey Quepoa Corrohore",
+      "categoria": "Personaje secundario",
+      "faccion": "Fuerzas del Bucle / Antagonistas",
+      "primera_aparicion": 7,
+      "archivo": "quepoa_corrohore.json"
+    },
+    {
+      "id": "chamanes",
       "nombre": "Chamanes de las cuatro tribus",
+      "categoria": "Grupo secundario",
+      "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "primera_aparicion": 4,
       "archivo": "chamanes_de_las_cuatro_tribus.json"
     },
     {
-      "nombre": "Tribu Diquís",
+      "id": "tribu_diquis",
+      "nombre": "Tribu Diquís y Pueblos Aliados",
+      "categoria": "Grupo secundario",
+      "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "primera_aparicion": 2,
       "archivo": "tribu_diquis.json"
     },
     {
+      "id": "espanoles",
       "nombre": "Españoles y marineros de la expedición",
+      "categoria": "Grupo secundario",
+      "faccion": "Expedición Española 1499",
+      "primera_aparicion": 1,
       "archivo": "espanoles_y_marineros_de_la_expedicion.json"
     },
     {
+      "id": "la_banshee",
       "nombre": "La Banshee",
+      "categoria": "Entidad secundaria",
+      "faccion": "Guardianes de los Templos",
+      "primera_aparicion": 7,
       "archivo": "la_banshee.json"
     },
     {
-      "nombre": "Guardían del Templo del Norte",
+      "id": "guardian_norte",
+      "nombre": "Guardián del Templo del Norte",
+      "categoria": "Entidad secundaria",
+      "faccion": "Guardianes de los Templos",
+      "primera_aparicion": 7,
       "archivo": "guardian_del_templo_del_norte.json"
+    }
+  ],
+  "gemas": [
+    {
+      "id": "gema_azul",
+      "nombre": "Gema Azul del Tiempo / Verdad",
+      "color": "Azul Celeste",
+      "hex": "#38bdf8",
+      "valor": "La Verdad y el Portal del Tiempo",
+      "templo": "Heredada a través del Bucle Temporal (Curridabat 1990 / Cascada del Valle Diquís 1499)",
+      "portador": "Francisco 'Cisco' González Dávila / Don Paco",
+      "guardian": "Droid / Nawa (Custodia en la Cascada)",
+      "capitulo_aparicion": 1,
+      "capitulo_obtencion": 9,
+      "descripcion": "Cubo simétrico perfecto que abre caminos entre épocas al interactuar con el láser de escaneo de Droid."
+    },
+    {
+      "id": "gema_roja",
+      "nombre": "Gema Roja del Valor",
+      "color": "Rojo Carmesí",
+      "hex": "#ef4444",
+      "valor": "El Valor y la Supervivencia",
+      "templo": "Oculta en el lomo de Loky (Aldea Diquís)",
+      "portador": "Cisco (Cap. 4) -> Robada por Pipo/Ramsés (Cap. 5) -> Recuperada (Cap. 8)",
+      "guardian": "Loky (El Espíritu del Jaguar)",
+      "capitulo_aparicion": 4,
+      "capitulo_obtencion": 4,
+      "descripcion": "Contiene fuego líquido en su interior; responde a quien enfrenta el miedo para sanar en lugar de destruir."
+    },
+    {
+      "id": "gema_amarilla",
+      "nombre": "Gema Amarilla de la Voluntad",
+      "color": "Amarillo Ámbar",
+      "hex": "#eab308",
+      "valor": "La Voluntad y el Discernimiento",
+      "templo": "Traída por la Expedición de Gil y Colón (Playa Sur)",
+      "portador": "Gil / Cristóbal Colón -> Entregada a Pipo/Ramsés -> Recuperada (Cap. 8)",
+      "guardian": "Expedición Temporal",
+      "capitulo_aparicion": 6,
+      "capitulo_obtencion": 8,
+      "descripcion": "Transportó a Gil y a su padre adoptivo a 1499; manipulada por Ramsés para sostener el bucle infinito."
+    },
+    {
+      "id": "gema_blanca",
+      "nombre": "Gema Blanca de la Transformación",
+      "color": "Blanco Irisado",
+      "hex": "#f8fafc",
+      "valor": "La Transformación y Adaptación",
+      "templo": "Templo del Norte (Cordillera Volcánica Central)",
+      "portador": "Francisco 'Cisco' González Dávila",
+      "guardian": "Guardián del Templo del Norte (Gólem de Granito)",
+      "capitulo_aparicion": 6,
+      "capitulo_obtencion": 7,
+      "descripcion": "Contiene un millón de arcoíris diminutos; exige soltar los temores y combinar ciencia con alianza humana."
+    },
+    {
+      "id": "gema_verde",
+      "nombre": "Gema Verde de la Sanación",
+      "color": "Verde Esmeralda",
+      "hex": "#10b981",
+      "valor": "La Sanación y el Poder de Amar",
+      "templo": "Templo del Sur (Gran Ceibo de la Península de Osa)",
+      "portador": "Boenawa 'Nawa' Shilea",
+      "guardian": "La Banshee (Eco de los Caídos)",
+      "capitulo_aparicion": 6,
+      "capitulo_obtencion": 7,
+      "descripcion": "No se toma con la mano sino con el corazón, enfrentando el dolor heredado en unión espiritual con la naturaleza."
+    },
+    {
+      "id": "gema_naranja",
+      "nombre": "Gema Naranja de la Sabiduría",
+      "color": "Naranja Dorado",
+      "hex": "#f97316",
+      "valor": "La Sabiduría y la Humildad",
+      "templo": "Templo del Este (Cordillera de Talamanca)",
+      "portador": "Rey Curré",
+      "guardian": "Chamanes Cabécares y la Esfera de Agua Salada",
+      "capitulo_aparicion": 6,
+      "capitulo_obtencion": 7,
+      "descripcion": "Se entrega únicamente a quien reconoce que no lo sabe todo y pide perdón para unir a los pueblos."
+    },
+    {
+      "id": "gema_morada",
+      "nombre": "Gema Morada de la Creación",
+      "color": "Violeta Amatista",
+      "hex": "#a855f7",
+      "valor": "La Creación y el Vínculo Familiar",
+      "templo": "Templo del Oeste (Isla Sagrada de Nicoya)",
+      "portador": "Gilberto 'Gil' González Dávila (y anteriormente Shilea)",
+      "guardian": "Memoria de Ditsowe Shilea",
+      "capitulo_aparicion": 6,
+      "capitulo_obtencion": 7,
+      "descripcion": "Permitió a Shilea viajar a 1990 para salvar a sus hijos y guarda el mensaje que revela la hermandad de los tres jóvenes."
+    },
+    {
+      "id": "gema_indigo",
+      "nombre": "Gema Índigo del Espíritu",
+      "color": "Índigo Profundo",
+      "hex": "#6366f1",
+      "valor": "El Espíritu y la Conexión Cósmica",
+      "templo": "Dividida en los dos aretes de jade morado de Shilea",
+      "portador": "Boenawa 'Nawa' Shilea (junto a Loky)",
+      "guardian": "Linaje de Shilea",
+      "capitulo_aparicion": 2,
+      "capitulo_obtencion": 7,
+      "descripcion": "Estuvo oculta a plena vista en los aretes de Nawa; al unirse sus dos mitades en la Playa del Encuentro despierta el séptimo pulso."
+    }
+  ],
+  "relaciones": [
+    {
+      "origen": "don_paco",
+      "destino": "cisco",
+      "tipo": "familia_mentor",
+      "etiqueta": "Padre adoptivo y Maestro",
+      "capitulo_minimo": 0,
+      "descripcion": "Don Paco rescata y adopta a Cisco la noche de su nacimiento en 1990 y lo prepara para su misión."
+    },
+    {
+      "origen": "cisco",
+      "destino": "droid",
+      "tipo": "alianza",
+      "etiqueta": "Creador y Compañero IA",
+      "capitulo_minimo": 1,
+      "descripcion": "Cisco construyó a Droid a los 8 años; son inseparables en cada salto temporal."
+    },
+    {
+      "origen": "don_paco",
+      "destino": "doctor_miranda",
+      "tipo": "alianza",
+      "etiqueta": "Carta profética y pacto",
+      "capitulo_minimo": 0,
+      "descripcion": "Don Paco le deja la carta del 13 de diciembre de 1990 y el Dr. Miranda le confía al bebé de ojos azules."
+    },
+    {
+      "origen": "shilea",
+      "destino": "cisco",
+      "tipo": "familia",
+      "etiqueta": "Madre biológica",
+      "capitulo_minimo": 0,
+      "descripcion": "Shilea da a luz a Cisco y Gil en San José tras haber viajado desde 1499."
+    },
+    {
+      "origen": "shilea",
+      "destino": "gil",
+      "tipo": "familia",
+      "etiqueta": "Madre biológica",
+      "capitulo_minimo": 0,
+      "descripcion": "Shilea es la madre de Gil y le deja la carta sagrada en la Isla de Nicoya."
+    },
+    {
+      "origen": "cisco",
+      "destino": "gil",
+      "tipo": "familia",
+      "etiqueta": "Hermanos gemelos",
+      "capitulo_minimo": 0,
+      "descripcion": "Nacidos con dos minutos de diferencia en 1990 (ojos azules y ojos amarillos) y reunidos en 1499 (Cap. 6)."
+    },
+    {
+      "origen": "cisco",
+      "destino": "nawa",
+      "tipo": "alianza",
+      "etiqueta": "Compañeros Jawa",
+      "capitulo_minimo": 2,
+      "descripcion": "Nawa salva a Cisco en la cascada y se convierte en su protectora y guía en 1499."
+    },
+    {
+      "origen": "don_paco",
+      "destino": "nawa",
+      "tipo": "familia_mentor",
+      "etiqueta": "Maestro Jawa y padre adoptivo",
+      "capitulo_minimo": 2,
+      "descripcion": "El Jawa Paco acogió a Nawa de bebé en 1499 y la entrenó para recibir a Cisco."
+    },
+    {
+      "origen": "pipo_ramses",
+      "destino": "cisco",
+      "tipo": "mentor_aparente",
+      "etiqueta": "Falso Mentor Jawa",
+      "capitulo_minimo": 2,
+      "capitulo_maximo": 4,
+      "descripcion": "Pipo finge ser el aliado y mentor de Cisco en la aldea Diquís para que localice las gemas."
+    },
+    {
+      "origen": "cisco",
+      "destino": "curre",
+      "tipo": "alianza",
+      "etiqueta": "Aliados del Valle",
+      "capitulo_minimo": 4,
+      "descripcion": "Cisco se gana el respeto del Rey Curré al sanar al jaguar y decirle la verdad sobre el futuro."
+    },
+    {
+      "origen": "cisco",
+      "destino": "loky",
+      "tipo": "vinculo_espiritual",
+      "etiqueta": "Sanador y Guardián",
+      "capitulo_minimo": 4,
+      "descripcion": "Cisco extrae la Gema Roja infectada del lomo del jaguar y le da el nombre de Loky."
+    },
+    {
+      "origen": "nawa",
+      "destino": "loky",
+      "tipo": "vinculo_espiritual",
+      "etiqueta": "Vínculo simbiótico de batalla",
+      "capitulo_minimo": 5,
+      "descripcion": "Nawa cura a Loky con hierbas medicinales y combaten juntos como una sola alma en el Templo del Sur y la playa."
+    },
+    {
+      "origen": "pipo_ramses",
+      "destino": "cisco",
+      "tipo": "conflicto",
+      "etiqueta": "Traición y Bucle de Ramsés II",
+      "capitulo_minimo": 5,
+      "descripcion": "Pipo roba la Gema Roja y en el Cap. 8 revela ser el Faraón Ramsés II enfrentándose a los hermanos."
+    },
+    {
+      "origen": "pipo_ramses",
+      "destino": "loky",
+      "tipo": "conflicto",
+      "etiqueta": "Herida de la Gema Roja",
+      "capitulo_minimo": 5,
+      "descripcion": "Pipo incrustó la Gema Roja en Loky; el jaguar le desgarra el brazo cuando intenta robarla."
+    },
+    {
+      "origen": "cristobal_colon",
+      "destino": "gil",
+      "tipo": "familia_mentor",
+      "etiqueta": "Padre adoptivo en la expedición",
+      "capitulo_minimo": 6,
+      "descripcion": "El navegante del catalejo crió a Gil y viajó con él a 1499 mediante el Cubo Amarillo."
+    },
+    {
+      "origen": "cisco",
+      "destino": "tamanco",
+      "tipo": "alianza",
+      "etiqueta": "Equipo del Templo del Norte",
+      "capitulo_minimo": 6,
+      "descripcion": "Tamanco guía a Cisco al volcán y derriba el torrente de agua subterránea para derrotar al Gólem."
+    },
+    {
+      "origen": "shilea",
+      "destino": "nawa",
+      "tipo": "familia",
+      "etiqueta": "Madre biológica (Revelado en Cap. 7)",
+      "capitulo_minimo": 7,
+      "descripcion": "La carta de Nicoya revela que Shilea es la madre de Nawa, Cisco y Gil, y le dejó los aretes de jade."
+    },
+    {
+      "origen": "nawa",
+      "destino": "gil",
+      "tipo": "familia",
+      "etiqueta": "Hermanos de sangre",
+      "capitulo_minimo": 7,
+      "descripcion": "Descubren en el Capítulo 7 que ambos, junto con Cisco, son hijos de Ditsowe Shilea."
+    },
+    {
+      "origen": "shilea",
+      "destino": "dulcehe",
+      "tipo": "familia",
+      "etiqueta": "Hermanas (Linaje Biriteca)",
+      "capitulo_minimo": 7,
+      "descripcion": "Shilea encomienda a Gil buscar a su hermana Dulcehe La Biriteca en el Valle Central."
+    },
+    {
+      "origen": "curre",
+      "destino": "chamanes",
+      "tipo": "alianza",
+      "etiqueta": "Reconciliación y Gema Naranja",
+      "capitulo_minimo": 7,
+      "descripcion": "Curré se inclina ante los Chamanes Cabécares pidiendo perdón y unifica a las cuatro tribus."
+    },
+    {
+      "origen": "don_paco",
+      "destino": "cristobal_colon",
+      "tipo": "manipulacion_temporal",
+      "etiqueta": "Hipnosis en Las Vegas (1989)",
+      "capitulo_minimo": 9,
+      "descripcion": "Don Paco hipnotizó al navegante en 1989 para que creyera ser Colón y adelantara el viaje a 1499."
     }
   ]
 }

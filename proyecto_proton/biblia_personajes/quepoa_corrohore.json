@@ -1,0 +1,64 @@
+{
+  "id": "quepoa",
+  "nombre": "Rey Quepoa Corrohore",
+  "archivo": "quepoa_corrohore",
+  "categoria": "Personaje secundario",
+  "faccion": "Fuerzas del Bucle / Antagonistas",
+  "primera_aparicion": 7,
+  "capitulos_presente": [
+    7
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
+  "descripcion": {
+    "nombre_completo": "Quepoa Corrohore",
+    "alias": "El Rey Huetar",
+    "edad": "Adulto",
+    "apariencia": "Cacique de porte regio que porta ofrendas de chicha de maíz",
+    "personalidad": "Calculador y traicionero",
+    "trasfondo": "Rey Huetar invitado por el padre de Curré 240 lunas atrás a la gran reunión de unión de los pueblos",
+    "motivacion": "Impedir la hegemonía del Valle mediante el envenenamiento del padre de Curré",
+    "habilidades": "Diplomacia engañosa y uso de venenos",
+    "arco": "Aparece en la visión de la esfera de agua salada de Curré (Cap. 7.3), revelando la verdadera causa de la fractura entre las tribus",
+    "relaciones": "Rey Curré"
+  },
+  "atributos": {
+    "caracteristicas": [
+      "Astuto",
+      "Traicionero",
+      "Político"
+    ],
+    "estadisticas": {
+      "fuerza": 6,
+      "inteligencia": 7,
+      "agilidad": 6,
+      "resistencia": 6,
+      "espiritu": 4
+    },
+    "puntos_salud": 78,
+    "habilidades_especiales": [
+      "Intriga política"
+    ],
+    "poderes": [],
+    "funciones": [
+      "Catalizador del trauma pasado del Rey Curré"
+    ],
+    "color": "Rojo",
+    "hex": "#b91c1c"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Rey Huetar de la Visión del Pasado",
+      "faccion_visible": "Fuerzas del Bucle / Antagonistas",
+      "bio": "Envenenó la chicha de maíz del padre de Curré durante el consejo de unión de las tribus 240 lunas atrás, desatando décadas de rencor que Curré finalmente sana en el Templo del Este."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Explica el origen de la división de las tribus antes de la llegada de Cisco.",
+    "libro_2": "El destino de los pueblos que decidieron no cruzar el portal estelar.",
+    "libro_3": "Reconciliación histórica definitiva."
+  },
+  "notas": [
+    "Pieza clave del trasfondo político indígena en el Capítulo 7.3."
+  ]
+}

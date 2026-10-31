@@ -1,17 +1,30 @@
 {
+  "id": "curre",
   "nombre": "Rey Curré",
+  "archivo": "rey_curre",
   "categoria": "Personaje secundario importante",
+  "faccion": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+  "primera_aparicion": 4,
+  "capitulos_presente": [
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Curré",
-    "alias": "Rey Curré, Señor del Valle, El Rey Humilde",
-    "edad": "Adulto maduro",
-    "apariencia": "Hombre imponente, piel cobriza, cabello negro largo con canas, tocado de plumas",
-    "personalidad": "Orgulloso al inicio, luego humilde, sabio y visionario",
-    "trasfondo": "Rey de los Diquís, aliado clave de los hermanos y guía del pueblo",
-    "motivacion": "Proteger a su pueblo y asegurar su supervivencia",
-    "habilidades": "Liderazgo, estrategia, conocimiento histórico y espiritual",
-    "arco": "De rey arrogante a líder sabio y humilde",
-    "relaciones": "Cisco, Nawa, Gil, Tamanco, Pipo/Ramsés"
+    "alias": "Rey Curré, Señor del Valle de Diquís, El Rey Humilde",
+    "edad": "Adulto maduro (no envejece tras el éxodo estelar hasta 2033)",
+    "apariencia": "Hombre imponente de piel cobriza, cabello negro largo con canas, tocado de plumas de quetzal y bastón tallado con jaguares",
+    "personalidad": "Soberbio y desconfiado al inicio; luego humilde, sabio, valiente y con gran sentido del humor",
+    "trasfondo": "Rey de los Diquís que sometió a las otras tribus tras el asesinato de su padre por el Rey Huetar Quepoa Corrohore 240 lunas atrás",
+    "motivacion": "Unir a todos los pueblos indígenas sin soberbia y conducirlos hacia las estrellas para evitar su extinción",
+    "habilidades": "Liderazgo militar y político, estrategia, resistencia espiritual y portador de la Gema Naranja",
+    "arco": "En la esfera de agua salada del Templo del Este vence su orgullo, pide perdón de rodillas a los Cabécares y en 2033 regresa liderando las Esferas Madre",
+    "relaciones": "Cisco, Nawa, Gil, Tamanco, Chamanes de las cuatro tribus, Quepoa Corrohore, Pipo/Ramsés"
   },
   "atributos": {
     "caracteristicas": [
@@ -30,21 +43,41 @@
     },
     "puntos_salud": 88,
     "habilidades_especiales": [
-      "Liderazgo",
+      "Liderazgo de las 4 tribus",
       "Estrategia",
-      "Visión del futuro"
+      "Visión del futuro corporativo"
     ],
     "poderes": [
-      "Gema Naranja de Sabiduría"
+      "Gema Naranja de la Sabiduría"
     ],
     "funciones": [
-      "Rey",
-      "Aliado",
-      "Guía"
+      "Rey del Valle",
+      "Aliado principal",
+      "Comandante del Éxodo Estelar"
     ],
-    "color": "Naranja"
+    "color": "Naranja",
+    "hex": "#f97316"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 6,
+      "rol_visible": "Señor del Valle de Diquís",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Monarca imponente de los Diquís que pone a prueba a Cisco frente al jaguar negro y, tras ver su valor, se convierte en su aliado."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Portador de la Gema Naranja y Líder Interestelar de los Pueblos",
+      "faccion_visible": "Alianza Indígena (Diquís, Cabécares, Bribris, Borucas)",
+      "bio": "Supera la prueba de la oscuridad en Talamanca viendo el futuro de los cubículos y la muerte de su padre, une a las tribus con humildad, ancla el portal contra Ramsés y regresa en 2033 al mando de las Esferas Madre."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Unificador de las cuatro tribus, portador de la Gema Naranja y protagonista del mensaje global en el Epílogo de 2033.",
+    "libro_2": "Gobernante sabio de la civilización indígena interestelar en Alfa Centauri.",
+    "libro_3": "Líder de la flota de las 8 Esferas Madre a su regreso a Costa Rica en 2033."
   },
   "notas": [
-    "Representa el liderazgo sabio y la unión de pueblos"
+    "Representa la verdadera sabiduría que nace de la humildad y la unión de los pueblos."
   ]
 }

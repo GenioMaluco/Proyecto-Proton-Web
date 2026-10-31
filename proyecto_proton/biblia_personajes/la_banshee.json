@@ -1,24 +1,32 @@
 {
+  "id": "la_banshee",
   "nombre": "La Banshee",
+  "archivo": "la_banshee",
   "categoria": "Entidad secundaria",
+  "faccion": "Guardianes de los Templos",
+  "primera_aparicion": 7,
+  "capitulos_presente": [
+    7
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
-    "nombre_completo": "La Banshee",
+    "nombre_completo": "La Banshee del Gran Ceibo",
     "alias": "El Alma en Pena, El Eco de los Caídos",
-    "edad": "Eterna",
-    "apariencia": "Forma espectral, traslúcida, ojos vacíos y boca de grito",
-    "personalidad": "Dolorosa, vengativa y llena de rabia acumulada",
-    "trasfondo": "Manifestación del dolor de los guerreros caídos en el templo del sur",
-    "motivacion": "Evitar que alguien más tome la Gema Verde",
-    "habilidades": "Alarido psíquico, control de sombras, posesión",
-    "arco": "Es derrotada cuando Nawa y Loky unen fuerzas",
-    "relaciones": "Nawa, Loky"
+    "edad": "Centenaria",
+    "apariencia": "Inicialmente adopta la forma de Shilea; luego se transforma en un espectro traslúcido de cuencas vacías, garras de hueso y sudarios de hojas",
+    "personalidad": "Dolorosa, vengativa y nacida del miedo de quienes fracasaron antes",
+    "trasfondo": "Conglomerado del dolor de las madres y de los siete guerreros petrificados que intentaron tomar la Gema Verde por la fuerza",
+    "motivacion": "Quebrar la voluntad de Nawa con la herida de no conocer su identidad",
+    "habilidades": "Alarido psíquico, intangibilidad y tentáculos de sombra",
+    "arco": "Es derrotada y purificada cuando Nawa y Loky combinan lo físico (cuchillo de obsidiana) y lo espiritual, liberando las almas atrapadas",
+    "relaciones": "Nawa, Loky, Shilea"
   },
   "atributos": {
     "caracteristicas": [
       "Espectral",
-      "Vengativa",
       "Dolorosa",
-      "Poderosa"
+      "Intangible",
+      "Prueba del corazón"
     ],
     "estadisticas": {
       "fuerza": 5,
@@ -29,19 +37,32 @@
     },
     "puntos_salud": 70,
     "habilidades_especiales": [
-      "Control de sombras",
-      "Alarido psíquico"
+      "Alarido de frecuencia",
+      "Ilusión materna"
     ],
     "poderes": [
-      "Posesión",
-      "Manipulación emocional"
+      "Manipulación del dolor acumulado"
     ],
     "funciones": [
-      "Antagonista espiritual"
+      "Guardiana del Templo del Sur (Gema Verde)"
     ],
-    "color": "Negro"
+    "color": "Verde",
+    "hex": "#059669"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Guardiana Espectral del Templo del Sur",
+      "faccion_visible": "Guardianes de los Templos",
+      "bio": "Manifestación del dolor de los caídos en el Gran Ceibo de Osa. Nawa y Loky la vencen y liberan a las siete almas petrificadas para obtener la Gema Verde."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Prueba espiritual superada por Nawa y Loky en el Capítulo 7.2.",
+    "libro_2": "Referencia de las pruebas de los templos ancestrales.",
+    "libro_3": "Memoria de los guerreros liberados."
   },
   "notas": [
-    "Representa el dolor no resuelto"
+    "Representa el dolor heredado que solo se corta con voluntad y compañía."
   ]
 }

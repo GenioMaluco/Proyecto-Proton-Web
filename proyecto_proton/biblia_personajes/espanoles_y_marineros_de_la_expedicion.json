@@ -1,24 +1,36 @@
 {
+  "id": "espanoles",
   "nombre": "Españoles y marineros de la expedición",
+  "archivo": "espanoles_y_marineros_de_la_expedicion",
   "categoria": "Grupo secundario",
+  "faccion": "Expedición Española 1499",
+  "primera_aparicion": 1,
+  "capitulos_presente": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
-    "nombre_completo": "Conquistadores y marineros españoles",
-    "alias": "Conquistadores, Hombres de Metal",
+    "nombre_completo": "Marineros y soldados de la expedición adelantada de 1499",
+    "alias": "Hombres de Metal",
     "edad": "Adultos",
-    "apariencia": "Barbudos, armaduras de metal, espadas y arcabuces",
-    "personalidad": "Ambiciosos, temerosos y obedientes",
-    "trasfondo": "Forman parte de la expedición de 1499 y se enfrentan a los hermanos",
-    "motivacion": "Buscar riquezas y gloria",
-    "habilidades": "Combate con espada, uso de arcabuces y navegación",
-    "arco": "Son un obstáculo que los hermanos deben superar",
-    "relaciones": "Gil, Colón, Pipo/Ramsés"
+    "apariencia": "Hombres barbudos con cascos y armaduras de metal, espadas, cañones y tres carabelas (La Pinta, La Niña y La Santa María)",
+    "personalidad": "Ambiciosos por el oro de El Dorado, aunque los subordinados de Gil le son leales",
+    "trasfondo": "Llegados en 1499 (tres años antes de la historia oficial) debido a la intervención temporal de Don Paco y las manipulaciones de Pipo",
+    "motivacion": "Encontrar oro y regresar a España",
+    "habilidades": "Combate naval, artillería de cañones y navegación",
+    "arco": "Una facción leal a Gil combate junto a las tribus en la Playa del Encuentro y luego zarpa con él para desviar el rastro histórico",
+    "relaciones": "Gil, Cristóbal Colón, Pipo/Ramsés"
   },
   "atributos": {
     "caracteristicas": [
-      "Ambiciosos",
       "Organizados",
-      "Militares",
-      "Temerosos"
+      "Navegantes",
+      "Armados"
     ],
     "estadisticas": {
       "fuerza": 6,
@@ -29,17 +41,31 @@
     },
     "puntos_salud": 75,
     "habilidades_especiales": [
-      "Combate armado",
+      "Artillería naval",
       "Navegación"
     ],
     "poderes": [],
     "funciones": [
-      "Enemigos",
-      "Expedición"
+      "Fuerza naval en 1499",
+      "Subordinados de Gil"
     ],
-    "color": "Rojo"
+    "color": "Rojo",
+    "hex": "#ef4444"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Expedición Adelantada de 1499",
+      "faccion_visible": "Expedición Española 1499",
+      "bio": "Tripulación de las carabelas cuya llegada anticipada a 1499 forma parte del tablero temporal entre Don Paco, Gil y Ramsés."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Presencia naval en la costa del Pacífico y la Playa del Encuentro.",
+    "libro_2": "Expediciones del siglo XVI que Gil desvía para proteger el secreto de las Esferas.",
+    "libro_3": "Reacción de Madrid en el Epílogo de 2033 ante la broma del Rey Curré."
   },
   "notas": [
-    "Grupo antagonista de la expedición"
+    "Subdivididos entre la flota de las carabelas y la tripulación leal al barco de vapor de Gil."
   ]
 }

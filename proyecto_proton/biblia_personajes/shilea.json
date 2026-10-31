@@ -1,17 +1,26 @@
 {
-  "nombre": "Shilea",
+  "id": "shilea",
+  "nombre": "Ditsowe Shilea",
+  "archivo": "shilea",
   "categoria": "Personaje secundario importante",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 0,
+  "capitulos_presente": [
+    0,
+    7
+  ],
+  "imagen": "Proyecto-Proton/src/1. Don Paco y Francisco en el hospital.png",
   "descripcion": {
     "nombre_completo": "Ditsowe Shilea",
     "alias": "Shilea, La Madre Viajera",
-    "edad": "Fallece joven en 1990",
-    "apariencia": "Mujer indígena de piel morena, cabello negro, ojos oscuros, aretes de jade morado",
-    "personalidad": "Valiente, amorosa y sacrificada",
-    "trasfondo": "Originaria de una tribu cabécar, viajó al futuro para salvar a sus hijos y a su pueblo",
-    "motivacion": "Salvar a sus hijos y a su comunidad",
-    "habilidades": "Conocimiento de plantas medicinales, valor y conexión con las gemas",
-    "arco": "Su presencia emocional guía a los hermanos desde la distancia",
-    "relaciones": "Cisco, Nawa, Gil, Don Paco, Pipo/Ramsés"
+    "edad": "Joven; fallece el 13 de diciembre de 1990 al dar a luz a Cisco y Gil",
+    "apariencia": "Mujer indígena cabécar de piel morena, cabello negro, tatuaje de ocho esferas en círculo y aretes de jade morado",
+    "personalidad": "Valiente, amorosa, abnegada y visionaria",
+    "trasfondo": "Madre biológica de Nawa, Gil y Cisco y hermana de Dulcehe La Biriteca. En 1499 tocó la Gema Morada en la Isla de Nicoya para viajar a 1990 y salvar a sus hijos de la plaga",
+    "motivacion": "Dar vida a sus hijos en una época donde pudieran sobrevivir y dejarles el camino trazado para salvar a su pueblo",
+    "habilidades": "Herboristería ancestral, valentía para cruzar el tiempo y vínculo espiritual con las gemas Morada e Índigo",
+    "arco": "Su sacrificio en el Capítulo 0 y su carta revelada en el Capítulo 7 unen emocionalmente a los tres hermanos",
+    "relaciones": "Cisco, Nawa, Gil, Don Paco, Dulcehe La Biriteca"
   },
   "atributos": {
     "caracteristicas": [
@@ -25,26 +34,45 @@
       "fuerza": 5,
       "inteligencia": 7,
       "agilidad": 5,
-      "resistencia": 5,
-      "espiritu": 8
+      "resistencia": 6,
+      "espiritu": 9
     },
     "puntos_salud": 70,
     "habilidades_especiales": [
       "Herboristería",
-      "Conexión con gemas"
+      "Viaje temporal por amor maternal"
     ],
     "poderes": [
-      "Gema Morada",
-      "Gema Índigo"
+      "Gema Morada de la Creación",
+      "Gema Índigo del Espíritu (Aretes de jade)"
     ],
     "funciones": [
-      "Madre",
-      "Guía espiritual",
-      "Fuente emocional"
+      "Madre de los tres protagonistas",
+      "Corazón emocional de la saga"
     ],
-    "color": "Violeta"
+    "color": "Violeta",
+    "hex": "#c084fc"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 6,
+      "rol_visible": "Madre Misteriosa de las Ocho Esferas",
+      "faccion_visible": "San José 1990",
+      "bio": "Mujer encontrada inconsciente en el Cerro de la Muerte que da a luz a los gemelos en 1990 antes de fallecer. Lleva tatuadas ocho esferas formando un círculo."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Ditsowe Shilea, Madre de Cisco, Gil y Nawa",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Su carta en el Templo del Oeste revela que viajó desde 1499 tocando la Gema Morada en Nicoya, fue cuidada por Don Paco en San José y es la madre de los tres jóvenes héroes."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "El origen del viaje y el lazo de sangre que une a Cisco, Gil y Nawa.",
+    "libro_2": "Su legado continúa a través de su hermana Dulcehe La Biriteca en el siglo XVI.",
+    "libro_3": "Memoria viva en el retorno de la semilla a Costa Rica."
   },
   "notas": [
-    "Es el vínculo emocional que une a los hermanos"
+    "Es el puente de amor maternal que conecta 1499 y 1990."
   ]
 }

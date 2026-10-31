@@ -1,24 +1,38 @@
 {
+  "id": "pipo_ramses",
   "nombre": "Pipo Ramsés",
+  "archivo": "pipo_ramses",
   "categoria": "Personaje secundario importante",
+  "faccion": "Fuerzas del Bucle / Antagonistas",
+  "primera_aparicion": 2,
+  "capitulos_presente": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+  ],
+  "imagen": "Proyecto-Proton/Personajes/Jawa-Pipo.jpg",
   "descripcion": {
-    "nombre_completo": "Ramsés II",
-    "alias": "Pipo, El Faraón, El Primogénito",
-    "edad": "Más de 3000 años",
-    "apariencia": "Hombre alto, tez morena, rasgos egipcios, tocado de oro y lapislázuli",
-    "personalidad": "Narcisista, arrogante, manipulador y obsesionado con el poder",
-    "trasfondo": "Faraón egipcio que viajó en el tiempo y se hizo pasar por un Jawa ancestral",
-    "motivacion": "Reunir las ocho gemas para abrir un portal y obtener poder absoluto",
-    "habilidades": "Control del tiempo, magia ancestral, manipulación mental y premonición limitada",
-    "arco": "Antagonista trágico que termina atrapado en su propio bucle",
-    "relaciones": "Cisco, Nawa, Gil, Don Paco, Curré"
+    "nombre_completo": "Ramsés II (oculto bajo la identidad de Jawa Pipo)",
+    "alias": "Jawa Pipo, Ramsés el Grande, Faraón de las Dos Tierras, El Arquitecto del Bucle",
+    "edad": "Más de 3,000 años",
+    "apariencia": "Como Pipo: anciano chamán de cabello oscuro con trenzas y collares; como Ramsés: hombre imponente con lino blanco, tocado de oro y lapislázuli y collar de escarabajos",
+    "personalidad": "Carismático, teatral, manipulador, narcisista y obsesionado con el control absoluto del tiempo",
+    "trasfondo": "Faraón egipcio que cruzó el mar milenios atrás buscando los cristales esenciales, introdujo el sarampión como experimento y fingió ser el Jawa sucesor de Don Paco",
+    "motivacion": "Reunir las ocho gemas y el oro de los Diquís para regresar al Nilo como un Dios absoluto dueño del eterno retorno",
+    "habilidades": "Magia mental (psicología/manipulación), alquimia de pólvora, premonición táctica y creación del bucle temporal de Planck con las gemas Roja y Amarilla",
+    "arco": "Pasa de mentor carismático a traidor descubierto y finalmente a dios autoproclamado encerrado en la cuarentena estática de su propio infinito",
+    "relaciones": "Cisco, Nawa, Gil, Don Paco, Curré, Loky, Cristóbal Colón"
   },
   "atributos": {
     "caracteristicas": [
       "Manipulador",
       "Ambicioso",
       "Estratega",
-      "Cruel",
+      "Soberbio",
       "Poderoso"
     ],
     "estadisticas": {
@@ -30,22 +44,48 @@
     },
     "puntos_salud": 80,
     "habilidades_especiales": [
-      "Control temporal",
-      "Magia ancestral",
-      "Manipulación mental"
+      "Bucle temporal",
+      "Magia mental",
+      "Pólvora",
+      "Ejército de espectros de Anubis"
     ],
     "poderes": [
-      "Gema Roja de Valor",
-      "Gema Amarilla de Voluntad"
+      "Gema Roja del Valor (usurpada)",
+      "Gema Amarilla de la Voluntad (usurpada)"
     ],
     "funciones": [
-      "Antagonista",
-      "Manipulador",
-      "Rival del tiempo"
+      "Falso mentor (Cap. 2-4)",
+      "Antagonista principal (Cap. 5-8)"
     ],
-    "color": "Amarillo"
+    "color": "Amarillo",
+    "hex": "#eab308"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 4,
+      "rol_visible": "Jawa Pipo, Mentor de la Aldea Diquís",
+      "faccion_visible": "Alianza Indígena / Jawas",
+      "bio": "Actual Jawa de la aldea Diquís y antiguo aprendiz de Paco. Recibe a Cisco con entusiasmo, le enseña sobre la 'magia' (psicología, pólvora y matemáticas) y le entrega los manuscritos de los ocho Cristales."
+    },
+    {
+      "hasta_capitulo": 7,
+      "rol_visible": "Jawa Traidor y Ladrón de las Gemas Roja y Amarilla",
+      "faccion_visible": "Fuerzas del Bucle / Antagonistas",
+      "bio": "Roba la Gema Roja en la noche, es herido en el brazo por Loky y huye hacia las carabelas en un submarino primitivo tras haber engañado también a Gil y a su padre adoptivo para obtener la Gema Amarilla."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Ramsés II, El Faraón Infinito",
+      "faccion_visible": "Fuerzas del Bucle / Antagonistas",
+      "bio": "Revela su verdadera identidad milenaria como el Faraón Ramsés II y encierra la Playa del Encuentro en un bucle de ocho repeticiones, hasta ser derrotado por el Protocolo Paradox y confinado en una llanura estática por la eternidad."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Antagonista central; encerrado en la cuarentena cuántica de su propio bucle al final del Capítulo 8.",
+    "libro_2": "Ecos de sus experimentos previos en Mesoamérica y el Antiguo Egipto dentro de la historia de los Jawas.",
+    "libro_3": "Referencia fundamental sobre el peligro del poder sin amor ni libertad."
   },
   "notas": [
-    "Representa la ambición, el orgullo y la corrupción del poder"
+    "Representa la soberbia del poder absoluto y la prisión del ego que se niega a aprender."
   ]
 }

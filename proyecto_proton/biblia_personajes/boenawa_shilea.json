@@ -1,17 +1,33 @@
 {
+  "id": "nawa",
   "nombre": "Boenawa Shilea",
+  "archivo": "boenawa_shilea",
   "categoria": "Personaje principal",
+  "faccion": "Héroes del Tiempo / Jawas",
+  "primera_aparicion": 2,
+  "capitulos_presente": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "imagen": "Proyecto-Proton/src/2. Aventura en el vórtice temporal.png",
   "descripcion": {
     "nombre_completo": "Boenawa Shilea",
-    "alias": "Nawa, Ditsowe, La Jaguar, Guardiana del Valle",
-    "edad": "Aproximadamente 12-13 años",
-    "apariencia": "Piel morena, cabello negro, ojos negros brillantes, contextura ágil y musculosa",
-    "personalidad": "Feroz, valiente, intuitiva, protectora y leal",
-    "trasfondo": "Criada por Don Paco, entrenada para ser una Jawa y protegida por la conexión con la naturaleza",
-    "motivacion": "Proteger a su pueblo, a sus hermanos y cumplir la profecía",
-    "habilidades": "Combate con cuchillo de obsidiana, supervivencia en la selva, uso de plantas medicinales y vínculo con Loky",
-    "arco": "Pasa de guerrera solitaria a líder espiritual y protectora",
-    "relaciones": "Cisco, Gil, Don Paco, Loky, Curré, Pipo/Ramsés"
+    "alias": "Nawa, Ditsowe, La Jaguar, La Séptima, Guardiana del Valle",
+    "edad": "Aproximadamente 12-13 años en 1499",
+    "apariencia": "Piel morena, cabello negro rebelde, ojos negros brillantes, máscara de zorro, aretes de jade morado y bata de laboratorio de Cisco",
+    "personalidad": "Feroz, valiente, intuitiva, protectora y profundamente leal",
+    "trasfondo": "Hija mayor de Shilea y hermana de Cisco y Gil; enviada de bebé a la aldea Diquís para salvarla de la fiebre manchada y criada por el Jawa Paco",
+    "motivacion": "Proteger a su pueblo, cuidar de sus hermanos y cumplir las instrucciones de la carta de Jawa Paco",
+    "habilidades": "Combate con cuchillo de obsidiana, tejido táctico, supervivencia en la selva, herboristería medicinal y vínculo simbiótico con Loky",
+    "arco": "De guardiana solitaria con miedo a su origen a portadora de las Gemas Verde e Índigo que lidera el viaje hacia Alfa Centauri",
+    "relaciones": "Cisco, Gil, Don Paco, Loky, Curré, Shilea, Pipo/Ramsés"
   },
   "atributos": {
     "caracteristicas": [
@@ -36,17 +52,37 @@
       "Comunicación con animales"
     ],
     "poderes": [
-      "Gema Verde de Sanación",
-      "Gema Índigo de Espíritu"
+      "Gema Verde de la Sanación",
+      "Gema Índigo del Espíritu"
     ],
     "funciones": [
       "Guerrera",
       "Protectora",
       "Guía espiritual"
     ],
-    "color": "Verde"
+    "color": "Verde",
+    "hex": "#10b981"
+  },
+  "evolucion_por_capitulo": [
+    {
+      "hasta_capitulo": 5,
+      "rol_visible": "Aprendiz Jawa del Valle de Diquís",
+      "faccion_visible": "Alianza Indígena / Jawas",
+      "bio": "Joven guerrera criada por el Jawa Paco en 1499. Salva a Cisco de caer por la cascada usando una máscara de zorro, lo guía a la aldea Diquís y cura las heridas del jaguar Loky."
+    },
+    {
+      "hasta_capitulo": 10,
+      "rol_visible": "Hermana Mayor, La Séptima y Portadora de la Sanación y el Espíritu",
+      "faccion_visible": "Héroes del Tiempo / Jawas",
+      "bio": "Derrota a la Banshee en el Templo del Sur montando a Loky, descubre por la carta de Shilea que es hermana de sangre de Cisco y Gil, une sus aretes de jade para despertar la Gema Índigo y lidera la semilla humana hacia Alfa Centauri."
+    }
+  ],
+  "proyeccion_saga": {
+    "libro_1_canon": "Guía en 1499, guerrera del Templo del Sur y líder del éxodo cósmico hacia Alfa Centauri junto a Loky.",
+    "libro_2": "Crónicas de la civilización semilla en Alfa Centauri y su conexión espiritual a través del espacio-tiempo con sus hermanos.",
+    "libro_3": "Regreso triunfal en 2033 y convergencia con las reservas indígenas y las Esferas Madre."
   },
   "notas": [
-    "Representa la protección, la fuerza y la sanación"
+    "Representa la protección, la fuerza de la naturaleza y la sanación del dolor ancestral."
   ]
 }
