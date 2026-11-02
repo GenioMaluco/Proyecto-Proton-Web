@@ -156,6 +156,16 @@
   }
 
   // --- Navigation ---
+  function setAudioDockOpen(isOpen) {
+    const dock = document.getElementById("audio-dock");
+    const bubbleBtn = document.getElementById("btn-audio-bubble");
+    if (!dock) return;
+    dock.classList.toggle("open", Boolean(isOpen));
+    if (bubbleBtn) {
+      bubbleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+  }
+
   function switchView(viewName) {
     state.activeView = viewName;
     document.querySelectorAll(".view-section").forEach((sec) => {
@@ -164,8 +174,19 @@
     document.querySelectorAll(".nav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.view === viewName);
     });
+    const audioDock = document.getElementById("audio-dock");
+    if (audioDock) {
+      audioDock.classList.toggle("reader-visible", viewName === "reader");
+      if (viewName !== "reader") {
+        setAudioDockOpen(false);
+        stopTTS();
+      }
+    }
     if (viewName === "characters") {
       renderCharacterExplorer();
+    }
+    if (viewName === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
     setPageBackdrop(viewName === "reader" ? IMG.chapter(state.currentChapterIdx) : IMG.cover);
   }
@@ -615,9 +636,11 @@
   function updateAudioButtonsUI() {
     const playBtn = document.getElementById("btn-audio-play");
     const dot = document.getElementById("audio-pulse-dot");
+    const bubbleDot = document.getElementById("audio-bubble-dot");
+    const isPlayingNow = state.tts.playing && !state.tts.paused;
     if (playBtn) {
       if (!state.tts.playing) {
-        playBtn.textContent = "▶ Narrar Capítulo";
+        playBtn.textContent = "▶ Narrar";
       } else if (state.tts.paused) {
         playBtn.textContent = "▶ Reanudar";
       } else {
@@ -625,7 +648,10 @@
       }
     }
     if (dot) {
-      dot.classList.toggle("playing", state.tts.playing && !state.tts.paused);
+      dot.classList.toggle("playing", isPlayingNow);
+    }
+    if (bubbleDot) {
+      bubbleDot.classList.toggle("playing", isPlayingNow);
     }
   }
 
@@ -1058,6 +1084,7 @@
       }
 
       if (target.dataset.ttsFrom !== undefined) {
+        setAudioDockOpen(true);
         startTTSFromParagraph(Number(target.dataset.ttsFrom));
         return;
       }
@@ -1151,7 +1178,9 @@
       renderCharacterCardsGrid();
     });
 
-    // Audio / TTS controls
+    // Audio / TTS controls (burbuja abrible/cerrable)
+    document.getElementById("btn-audio-bubble")?.addEventListener("click", () => setAudioDockOpen(true));
+    document.getElementById("btn-audio-close")?.addEventListener("click", () => setAudioDockOpen(false));
     document.getElementById("btn-audio-play")?.addEventListener("click", togglePlayPauseTTS);
     document.getElementById("btn-audio-stop")?.addEventListener("click", stopTTS);
     document.getElementById("btn-audio-prev")?.addEventListener("click", () => {

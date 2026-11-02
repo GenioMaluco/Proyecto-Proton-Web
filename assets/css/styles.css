@@ -74,7 +74,7 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
-  padding-bottom: 120px;
+  padding-bottom: 85px;
   overflow-x: hidden;
 }
 
@@ -155,7 +155,24 @@ code {
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-gold);
 }
-.brand { display: flex; align-items: center; gap: 0.85rem; }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+.brand:hover .brand-orb,
+.brand:focus-visible .brand-orb {
+  transform: scale(1.08) rotate(8deg);
+  border-color: var(--accent-gold);
+  box-shadow: var(--glow-gold), inset 0 0 14px rgba(224, 178, 82, 0.5);
+}
+.brand:focus-visible { outline: none; }
 .brand-orb {
   width: 42px; height: 42px;
   border-radius: 50%;
@@ -165,6 +182,8 @@ code {
   border: 1.5px solid var(--accent-cyan);
   box-shadow: var(--glow-cyan), inset 0 0 12px rgba(62, 232, 216, 0.4);
   position: relative;
+  flex-shrink: 0;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
 }
 .brand-orb::before, .brand-orb::after {
   content: "";
@@ -799,28 +818,98 @@ button:disabled { opacity: 0.4; cursor: not-allowed; transform: none !important;
 }
 .lore-card img { width: 100%; max-height: 260px; object-fit: cover; border-radius: 10px; }
 
-/* ---------- AUDIO DOCK ---------- */
+/* ---------- BURBUJA Y REPRODUCTOR DE AUDIOLIBRO (SOLO EN PROYECTO PROTÓN) ---------- */
 .audio-dock {
+  display: none; /* Oculto en todas las secciones salvo en Proyecto Protón (.reader-visible) */
   position: fixed;
-  left: 50%;
-  bottom: 14px;
-  transform: translateX(-50%);
+  right: 18px;
+  bottom: 18px;
   z-index: 1500;
-  width: min(1100px, calc(100% - 24px));
-  border-radius: 16px;
-  background: rgba(3, 10, 7, 0.94);
+}
+.audio-dock.reader-visible {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Botón Burbuja Flotante */
+.audio-bubble-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(6, 24, 18, 0.96), rgba(3, 12, 9, 0.96));
+  border: 1.5px solid var(--accent-gold);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg), var(--glow-cyan);
+  backdrop-filter: blur(12px);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.audio-bubble-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  border-color: var(--accent-cyan);
+  box-shadow: var(--shadow-lg), 0 0 24px rgba(62, 232, 216, 0.55);
+}
+.audio-bubble-icon { font-size: 1.15rem; line-height: 1; }
+.audio-bubble-label {
+  font-family: var(--font-hud);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+
+/* Cuando el panel está abierto, ocultamos la burbuja y mostramos la tarjeta */
+.audio-dock.open .audio-bubble-btn { display: none; }
+
+.audio-dock-inner {
+  display: none;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(460px, calc(100vw - 28px));
+  padding: 0.9rem 1.05rem;
+  border-radius: 18px;
+  background: rgba(3, 10, 7, 0.96);
   border: 1px solid var(--border-gold);
   box-shadow: var(--shadow-lg), var(--glow-cyan);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
+  animation: fadeIn 0.22s ease;
 }
-.audio-dock-inner {
+.audio-dock.open .audio-dock-inner { display: flex; }
+
+.audio-panel-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  padding: 0.7rem 1rem;
+  gap: 0.6rem;
 }
+.audio-close-btn {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: rgba(10, 28, 21, 0.85);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+.audio-close-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-crimson);
+  background: rgba(239, 68, 68, 0.18);
+}
+
 .audio-status { display: flex; align-items: center; gap: 0.6rem; min-width: 0; flex: 1; }
 .audio-pulse, .pulse-dot {
   width: 10px; height: 10px;
@@ -871,14 +960,50 @@ button:disabled { opacity: 0.4; cursor: not-allowed; transform: none !important;
   .hero-card { grid-template-columns: 1fr; }
   .hero-art { display: none; }
   .reader-layout { grid-template-columns: 1fr; }
-  .chapter-sidebar { position: static; max-height: 320px; }
+  .chapter-sidebar { position: static; max-height: 290px; }
   .graph-container { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .topbar { justify-content: center; }
-  .nav-btn { font-size: 0.76rem; padding: 0.4rem 0.7rem; }
-  .reader-toolbar { top: 0; position: relative; }
-  .chapter-header-banner { min-height: 260px; }
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    padding: 0.65rem 0.85rem;
+  }
+  .brand {
+    justify-content: center;
+  }
+  .brand-title { font-size: 1.1rem; }
+  .brand-subtitle { font-size: 0.58rem; }
+  .nav-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.35rem;
+  }
+  .nav-btn {
+    font-size: 0.76rem;
+    padding: 0.45rem 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .reader-toolbar { top: 0; position: relative; padding: 0.6rem 0.75rem; }
+  .chapter-header-banner { min-height: 240px; padding: 1.4rem 1rem 1.2rem; }
+  .chapter-content { padding: 1.25rem 1rem 0.8rem; }
+  .para-actions {
+    position: static;
+    opacity: 1;
+    margin-top: 0.35rem;
+    justify-content: flex-end;
+  }
+  .chapter-footer-nav {
+    flex-direction: column;
+    padding: 1.1rem 1rem 1.5rem;
+  }
+  .chapter-footer-nav button {
+    width: 100%;
+    justify-content: center;
+  }
   #char-search-input { min-width: 100% !important; margin-left: 0 !important; }
+  .audio-dock { right: 12px; bottom: 12px; }
   .audio-now-playing { white-space: normal; }
 }
