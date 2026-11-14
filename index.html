@@ -56,6 +56,12 @@
       <button type="button" class="nav-btn" data-view="lore">
         💎 Lore, Gemas &amp; Apuntes
       </button>
+      <button type="button" class="nav-btn" data-view="game">
+        🕹️ Videojuego Demo
+      </button>
+      <button type="button" class="nav-btn" data-view="studio">
+        🎮 Estudio Videojuego
+      </button>
     </nav>
   </header>
 
@@ -80,6 +86,12 @@
           <div class="hero-actions">
             <button type="button" class="btn-primary" data-action="open-reader">
               📖 Leer Libro 1 Canon
+            </button>
+            <button type="button" class="btn-primary" data-action="open-game" style="background:linear-gradient(135deg,#00d4ff,#7c4dff);color:#04111d;">
+              🕹️ Videojuego Demo (Mundo 1-1)
+            </button>
+            <button type="button" class="btn-secondary" data-action="open-studio">
+              🎮 Estudio Videojuego (PixelFX · 0 Tokens)
             </button>
             <button type="button" class="btn-secondary" data-action="open-lore">
               📸 Subir / Ver Fotos de Apuntes a Mano
@@ -280,6 +292,46 @@
 
       <div id="lore-notes-grid" class="lore-notes-grid"></div>
     </section>
+
+    <!-- =======================================================================
+         VISTA 5: ESTUDIO CREADOR DE PERSONAJES, ANIMACIONES Y ESCENAS PIXELFX
+         ======================================================================= -->
+    <section id="view-studio" class="view-section" aria-label="Estudio Web Creador de Personajes y Animaciones PixelFX">
+      <div class="studio-top-intro">
+        <div>
+          <span class="hero-badge" style="margin-bottom:0.4rem;">🕹️ PROYECTO PROTÓN GAME LAB · MOTOR PROCEDURAL PIXELFX (0 TOKENS)</span>
+          <h2 class="section-heading" style="margin-bottom:0.25rem;">🎮 Estudio Creador de Personajes, Ataques, Objetos y Escenas</h2>
+          <p class="section-subtitle" style="margin-bottom:0;">
+            Selecciona cualquiera de los <strong>20 personajes canónicos del libro</strong>, personaliza su anatomía 3D-to-Pixel, Gema del Arcoíris, armas precolombinas/cibernéticas, prueba <strong>249 animaciones</strong> sobre <strong>escenas de fondo alusivas a Proyecto Protón</strong> y exporta hojas de sprites <code>.sheet.png</code> + metadatos <code>.sheet.json</code> listos para el videojuego.
+          </p>
+        </div>
+        <a href="studio.html" class="btn-secondary" style="white-space:nowrap;text-decoration:none;">
+          🖥️ Abrir en Pantalla Completa
+        </a>
+      </div>
+
+      <div id="proton-studio-root"></div>
+    </section>
+
+    <!-- =======================================================================
+         VISTA 6: VIDEOJUEGO DEMO JUGABLE (PC & MÓVIL) + BASE GODOT 4
+         ======================================================================= -->
+    <section id="view-game" class="view-section" aria-label="Videojuego Demo Proyecto Protón Mundo 1-1">
+      <div class="studio-top-intro">
+        <div>
+          <span class="hero-badge" style="margin-bottom:0.4rem;">🕹️ PROYECTO PROTÓN · VIDEOJUEGO DEMO (PC &amp; CELULAR) + PROYECTO GODOT 4</span>
+          <h2 class="section-heading" style="margin-bottom:0.25rem;">🏥 Mundo 1 - Nivel 1: Escape del Hospital Nocturno (Cap. 0)</h2>
+          <p class="section-subtitle" style="margin-bottom:0;">
+            Elige entre <strong>Don Paco, Cisco, Droid o Nawa</strong>. Entra en escena con <code>scifi/tractor-beam</code> sin armas, explora el <strong>Hospital Nocturno</strong>, encuentra tu arma en el Armero, usa <strong>Doble Salto Acrobático</strong>, <strong>Dash con Golpe</strong>, <strong>Escudo</strong>, carga la barra de energía con ítems de las criaturas (voladoras, rastreras y saltarinas) para lanzar el <strong>Sword Combo</strong>, recoge el <strong>Trozo de la Gema Blanca (<code>pickups/crystal-shard</code>)</strong> para hacerte grande, junta <strong>100 monedas de oro para 1 Vida Extra</strong>, resuelve el <strong>Puzzle de la Incubadora</strong> para rescatar al bebé y escapa subiendo al <strong>Vehículo Blanco</strong> antes de que se agoten los <strong>240 minutos</strong>.
+          </p>
+        </div>
+        <button type="button" class="btn-secondary" data-action="open-studio" style="white-space:nowrap;">
+          🎨 Ir al Estudio de Sprites
+        </button>
+      </div>
+
+      <div id="proton-game-demo-root"></div>
+    </section>
   </main>
 
   <!-- =======================================================================
@@ -341,8 +393,9 @@
     </div>
   </aside>
 
-  <!-- Base de datos compilada por book_builder.py + Lógica de la aplicación -->
+  <!-- Base de datos compilada por book_builder.py + Lógica de la aplicación + Estudio PixelFX (Bundle sin CORS) -->
   <script src="assets/data/proton_data.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/proton_studio_bundle.js"></script>
 </body>
 </html>

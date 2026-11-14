@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciscoworld1level1"]
+
+[ext_resource type="Script" path="res://scripts/PlayerCisco.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/StoryCutscene.gd" id="2_cutscene"]
+
+[node name="World1_Level1" type="Node2D"]
+
+[node name="PlayerCisco" type="CharacterBody2D" parent="."]
+position = Vector2(96, 260)
+script = ExtResource("1_player")
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerCisco"]
+
+[node name="MeleeHitbox" type="Area2D" parent="PlayerCisco"]
+position = Vector2(28, -16)
+
+[node name="Camera2D" type="Camera2D" parent="PlayerCisco"]
+limit_left = 0
+limit_top = 0
+limit_right = 3200
+limit_bottom = 360
+
+[node name="StoryCutscene" type="CanvasLayer" parent="."]
+process_mode = 3
+script = ExtResource("2_cutscene")

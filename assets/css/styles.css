@@ -1007,3 +1007,981 @@ button:disabled { opacity: 0.4; cursor: not-allowed; transform: none !important;
   .audio-dock { right: 12px; bottom: 12px; }
   .audio-now-playing { white-space: normal; }
 }
+
+/* ==========================================================================
+   ESTUDIO WEB CREADOR DE PERSONAJES, ANIMACIONES Y ESCENAS PIXELFX (0 TOKENS)
+   ========================================================================== */
+.studio-top-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.studio-shell {
+  display: grid;
+  grid-template-columns: 330px minmax(340px, 1fr) 330px;
+  gap: 1.1rem;
+  align-items: start;
+}
+
+.studio-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1rem;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.studio-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(62, 232, 216, 0.16);
+}
+
+.studio-panel-header h3 {
+  font-family: var(--font-display);
+  font-size: 0.96rem;
+  letter-spacing: 0.03em;
+  color: var(--accent-gold);
+  margin: 0;
+}
+
+.studio-badge {
+  font-family: var(--font-hud);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  background: rgba(62, 232, 216, 0.14);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(62, 232, 216, 0.35);
+}
+
+.studio-search,
+.studio-search-input,
+.studio-select {
+  width: 100%;
+  background: rgba(3, 12, 9, 0.92);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.5rem 0.7rem;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+}
+.studio-search:focus,
+.studio-search-input:focus,
+.studio-select:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: var(--glow-cyan);
+}
+
+.studio-meta-text {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.studio-subbox {
+  background: rgba(3, 10, 7, 0.65);
+  border: 1px solid rgba(62, 232, 216, 0.16);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.studio-subbox h4 {
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  color: var(--accent-cyan);
+  margin: 0;
+}
+
+.studio-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.studio-checkbox-row,
+.studio-checkbox-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.studio-checkbox-row input,
+.studio-checkbox-inline input {
+  accent-color: var(--accent-cyan);
+}
+
+/* Roster de los 20 Personajes */
+.studio-char-roster {
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.studio-char-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-radius: 10px;
+  background: rgba(6, 20, 15, 0.72);
+  border: 1px solid rgba(62, 232, 216, 0.15);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+.studio-char-btn:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(14, 42, 32, 0.88);
+}
+.studio-char-btn.active {
+  border-color: var(--accent-gold);
+  background: linear-gradient(90deg, rgba(224, 178, 82, 0.2), rgba(62, 232, 216, 0.12));
+  box-shadow: var(--glow-gold);
+}
+.studio-char-thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-cyan);
+  flex-shrink: 0;
+}
+.studio-char-meta,
+.studio-char-info {
+  min-width: 0;
+  flex: 1;
+}
+.studio-char-meta strong,
+.studio-char-info strong {
+  display: block;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.studio-char-meta span,
+.studio-char-info span {
+  display: block;
+  font-size: 0.69rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ficha Canon Resumida */
+.studio-canon-card {
+  background: rgba(3, 10, 7, 0.78);
+  border: 1px solid var(--border-gold);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+.studio-canon-top,
+.canon-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.studio-canon-top img,
+.canon-card-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1.5px solid var(--accent-gold);
+  flex-shrink: 0;
+}
+.canon-card-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--accent-gold);
+}
+.canon-card-role {
+  font-size: 0.73rem;
+  color: var(--text-secondary);
+}
+.canon-card-skills {
+  font-size: 0.71rem;
+  color: var(--accent-cyan);
+  margin-top: 0.15rem;
+}
+.studio-canon-stats,
+.canon-stats-bars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.25rem;
+  text-align: center;
+  font-family: var(--font-hud);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+}
+.studio-canon-stats span,
+.canon-stats-bars > div {
+  background: rgba(10, 28, 21, 0.85);
+  padding: 0.24rem 0.1rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+}
+.studio-canon-stats strong,
+.canon-stats-bars b {
+  color: var(--accent-cyan);
+  font-size: 0.78rem;
+}
+
+/* Anatomía y Paleta */
+.studio-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+.studio-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.24rem;
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.studio-color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.42rem;
+}
+.studio-color-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(3, 10, 7, 0.72);
+  border: 1px solid rgba(62, 232, 216, 0.18);
+  border-radius: 8px;
+  padding: 0.35rem 0.2rem;
+  cursor: pointer;
+}
+.studio-color-item span {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.studio-color-item input[type="color"] {
+  width: 28px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.studio-row-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.studio-btn-sm {
+  font-size: 0.76rem;
+  padding: 0.42rem 0.7rem;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Escenario Central Pixel-Art */
+.studio-stage-pills {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.studio-stage-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 440px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid var(--border-gold);
+  box-shadow: var(--shadow-lg), var(--glow-cyan);
+  background:
+    linear-gradient(45deg, #071410 25%, transparent 25%),
+    linear-gradient(-45deg, #071410 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #071410 75%),
+    linear-gradient(-45deg, transparent 75%, #071410 75%);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+  background-color: #040c09;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio-chapter-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  filter: saturate(1.1) brightness(0.65);
+  z-index: 1;
+}
+
+#st-main-canvas {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.studio-controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  background: rgba(3, 10, 7, 0.78);
+  padding: 0.55rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+.studio-toggles,
+.studio-speed-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+.studio-scene-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.6rem;
+}
+
+.studio-assigned-moves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.studio-export-box {
+  background: linear-gradient(145deg, rgba(224, 178, 82, 0.1), rgba(6, 22, 16, 0.9));
+  border: 1px solid var(--border-gold);
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+.studio-export-actions,
+.studio-export-btns {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.studio-sheet-preview {
+  margin-top: 0.75rem;
+  background: rgba(2, 8, 6, 0.92);
+  border: 1px dashed rgba(62, 232, 216, 0.35);
+  border-radius: 10px;
+  padding: 0.65rem;
+}
+.studio-sheet-img-wrap {
+  overflow-x: auto;
+  text-align: center;
+  padding: 0.35rem;
+}
+.studio-sheet-img-wrap img {
+  max-width: 100%;
+  height: auto;
+  max-height: 160px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Chips de Categorías y Lista de Movimientos (Derecha) */
+.studio-cat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  max-height: 128px;
+  overflow-y: auto;
+  padding-right: 0.2rem;
+}
+.studio-cat-chip {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.26rem 0.58rem;
+  border-radius: 999px;
+  border: 1px solid rgba(62, 232, 216, 0.22);
+  background: rgba(6, 20, 15, 0.78);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.studio-cat-chip:hover {
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+}
+.studio-cat-chip.active {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #140e04;
+}
+
+.studio-fx-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 540px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+.studio-fx-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.14rem;
+  text-align: left;
+  padding: 0.48rem 0.65rem;
+  border-radius: 9px;
+  background: rgba(6, 20, 15, 0.7);
+  border: 1px solid rgba(62, 232, 216, 0.14);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.studio-fx-item:hover {
+  border-color: var(--accent-cyan);
+  background: rgba(14, 42, 32, 0.88);
+}
+.studio-fx-item.active {
+  border-color: var(--accent-gold);
+  background: linear-gradient(90deg, rgba(224, 178, 82, 0.22), rgba(62, 232, 216, 0.1));
+}
+.studio-fx-top,
+.studio-fx-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+}
+.studio-fx-top strong,
+.studio-fx-item-top strong {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+.studio-fx-cat,
+.studio-fx-tag {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--accent-cyan);
+  background: rgba(62, 232, 216, 0.12);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.studio-fx-sub,
+.studio-fx-item-sub {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1200px) {
+  .studio-shell {
+    grid-template-columns: 1fr 1fr;
+  }
+  .studio-right {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 780px) {
+  .studio-shell {
+    grid-template-columns: 1fr;
+  }
+  .studio-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .studio-color-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   VISTA 6: VIDEOJUEGO DEMO JUGABLE (PC & CELULAR) + MAPA 8 MUNDOS GODOT 4
+   ========================================================================== */
+.game-demo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.game-demo-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.9rem 1.15rem;
+  background: rgba(8, 22, 30, 0.88);
+  border: 1px solid rgba(0, 212, 255, 0.28);
+  border-radius: 14px;
+}
+
+.game-demo-actions,
+.game-lab-actions,
+.game-hud-pills,
+.game-char-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.game-char-picker .toolbar-btn.active {
+  border-color: #00d4ff;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.28), rgba(124, 77, 255, 0.24));
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.35);
+}
+
+.game-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(6, 18, 28, 0.9);
+  border: 1px solid rgba(62, 232, 216, 0.28);
+  color: var(--text-primary);
+}
+
+.game-pill.gold {
+  border-color: rgba(255, 209, 102, 0.6);
+  color: #ffd166;
+}
+
+.game-pill.cyan {
+  border-color: rgba(0, 212, 255, 0.6);
+  color: #00d4ff;
+}
+
+.game-stage-box {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  background: #040812;
+  border: 2px solid rgba(0, 212, 255, 0.42);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.72), 0 0 28px rgba(0, 212, 255, 0.14);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.game-stage-box:fullscreen,
+.game-stage-box:-webkit-full-screen {
+  max-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #02050b;
+}
+
+#gd-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #050a14;
+}
+
+.game-stage-box:fullscreen #gd-canvas,
+.game-stage-box:-webkit-full-screen #gd-canvas {
+  max-height: 78vh;
+  width: auto;
+  margin: 0 auto;
+}
+
+/* Cutscene Overlay con ilustraciones de la web */
+.game-cutscene-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(3, 8, 16, 0.86);
+  backdrop-filter: blur(6px);
+}
+
+.game-cutscene-card {
+  width: min(680px, 96%);
+  background: rgba(9, 20, 32, 0.96);
+  border: 1px solid rgba(255, 209, 102, 0.55);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+}
+
+.game-cutscene-art-wrap,
+.game-cutscene-art {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+  background-color: #050c18;
+  background-size: cover;
+  background-position: center;
+}
+
+.game-cutscene-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.15) contrast(1.06);
+}
+
+.game-cutscene-vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4, 10, 18, 0.15) 0%, rgba(9, 20, 32, 0.96) 100%);
+}
+
+.game-cutscene-tag,
+.game-cutscene-badge {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.8rem;
+  padding: 0.24rem 0.65rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #ffd166;
+  background: rgba(5, 12, 22, 0.85);
+  border: 1px solid rgba(255, 209, 102, 0.45);
+}
+
+.game-cutscene-dialogue,
+.game-cutscene-dialog {
+  display: flex;
+  gap: 0.9rem;
+  padding: 0.95rem 1.15rem 0.8rem;
+  align-items: flex-start;
+}
+
+.game-cutscene-portrait,
+.game-cutscene-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid #00d4ff;
+  flex-shrink: 0;
+  box-shadow: 0 0 14px rgba(0, 212, 255, 0.35);
+}
+
+.game-cutscene-text-box,
+.game-cutscene-text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.game-cutscene-text-wrap strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 0.25rem;
+}
+
+.game-cutscene-text-wrap p {
+  font-size: 0.9rem;
+  line-height: 1.48;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.game-cutscene-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.15rem 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.game-cutscene-speaker {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #00d4ff;
+  margin-bottom: 0.25rem;
+}
+
+.game-cutscene-text {
+  font-size: 0.9rem;
+  line-height: 1.48;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.game-cutscene-controls {
+  display: flex;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+
+/* Controles táctiles para celular / tablet y clic en PC */
+.game-touch-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  background: linear-gradient(180deg, rgba(6, 16, 26, 0.95), rgba(4, 10, 18, 0.98));
+  border-top: 1px solid rgba(0, 212, 255, 0.24);
+  touch-action: manipulation;
+}
+
+.touch-dpad,
+.touch-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.touch-btn {
+  appearance: none;
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  background: rgba(12, 34, 52, 0.9);
+  color: #e6f7ff;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: transform 0.08s ease, background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.touch-dpad .touch-btn {
+  min-width: 58px;
+  font-size: 1.15rem;
+  padding: 0.65rem 0.95rem;
+}
+
+.touch-btn-jump,
+.touch-btn.action-jmp {
+  border-color: rgba(62, 232, 216, 0.6);
+  background: rgba(14, 58, 54, 0.92);
+}
+
+.touch-btn-atk,
+.touch-btn.action-atk {
+  border-color: rgba(255, 209, 102, 0.65);
+  background: rgba(66, 44, 12, 0.92);
+  color: #ffd166;
+}
+
+.touch-btn-pow,
+.touch-btn.action-pwr {
+  border-color: rgba(124, 77, 255, 0.7);
+  background: rgba(40, 22, 78, 0.92);
+  color: #d6c4ff;
+}
+
+.touch-btn:active,
+.touch-btn.pressed {
+  transform: scale(0.94);
+  background: rgba(0, 212, 255, 0.35);
+  box-shadow: 0 0 14px rgba(0, 212, 255, 0.5);
+}
+
+.game-instructions-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.4rem;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: rgba(8, 22, 30, 0.75);
+  border: 1px solid rgba(62, 232, 216, 0.18);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+/* Mapa de los 8 Mundos × 4 Niveles */
+.game-worlds-roadmap,
+.game-worlds-section {
+  padding: 1rem 1.15rem;
+  background: rgba(7, 19, 27, 0.82);
+  border: 1px solid rgba(62, 232, 216, 0.2);
+  border-radius: 14px;
+}
+
+.game-worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 0.85rem;
+}
+
+.game-world-card {
+  border-radius: 12px;
+  background: rgba(6, 15, 23, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-world-card.unlocked {
+  border-color: #00d4ff;
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.18);
+}
+
+.game-world-banner {
+  height: 92px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.55rem 0.65rem;
+}
+
+.game-world-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4, 10, 18, 0.25) 0%, rgba(6, 15, 23, 0.95) 100%);
+}
+
+.game-world-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.game-world-body {
+  padding: 0.75rem 0.9rem 0.9rem;
+}
+
+.game-world-body h4 {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin: 0 0 0.15rem;
+}
+
+.game-world-gem {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.16rem 0.5rem;
+  border-radius: 999px;
+}
+
+.game-world-status {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 0.15rem 0.48rem;
+  border-radius: 999px;
+  background: rgba(4, 12, 20, 0.85);
+  color: var(--text-muted);
+}
+
+.game-world-card.unlocked .game-world-status {
+  color: #3ee8d8;
+  font-weight: 700;
+}
+
+.game-world-levels {
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.26rem;
+}
+
+.game-world-levels li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.22rem 0.4rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.game-world-levels li.playable {
+  color: #3ee8d8;
+  background: rgba(62, 232, 216, 0.12);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .game-cutscene-art-wrap {
+    height: 150px;
+  }
+  .game-cutscene-dialogue {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .touch-btn {
+    padding: 0.6rem 0.72rem;
+    font-size: 0.78rem;
+  }
+  .touch-dpad .touch-btn {
+    min-width: 48px;
+    padding: 0.6rem 0.75rem;
+  }
+}

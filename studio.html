@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudio Videojuego Proyecto Protón | Creador de Personajes, Animaciones y Escenas PixelFX</title>
+  <meta name="description" content="Estudio web procedural (0 Tokens) para crear personajes basados en el canon de Proyecto Protón, animar ataques, objetos, estados, escenas de fondo y exportar hojas de sprites PNG + JSON." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Orbitron:wght@500;700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div id="page-backdrop" class="page-backdrop" aria-hidden="true"></div>
+  <div class="fireflies" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a
+      href="index.html"
+      class="brand"
+      style="text-decoration:none;"
+      title="Volver al Portal &amp; Saga Proyecto Protón"
+    >
+      <div class="brand-orb" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">PROYECTO PROTÓN · GAME LAB</div>
+        <span class="brand-subtitle">Estudio Procedural PixelFX · 0 Tokens · 20 Personajes Canon &amp; 249 Animaciones</span>
+      </div>
+    </a>
+
+    <nav class="nav-tabs" aria-label="Navegación Estudio">
+      <a href="index.html" class="nav-btn" style="text-decoration:none;">
+        🌌 Volver al Portal &amp; Libro
+      </a>
+      <span class="nav-btn active">
+        🎮 Estudio Creador de Personajes &amp; Escenas
+      </span>
+    </nav>
+  </header>
+
+  <main class="main-container" style="max-width:1480px;">
+    <section class="view-section active" aria-label="Estudio Web Creador de Personajes y Animaciones PixelFX">
+      <div class="studio-top-intro">
+        <div>
+          <span class="hero-badge" style="margin-bottom:0.4rem;">🕹️ PROYECTO PROTÓN GAME LAB · MOTOR PROCEDURAL PIXELFX (0 TOKENS)</span>
+          <h1 class="section-heading" style="margin-bottom:0.25rem;">🎮 Estudio Creador de Personajes, Ataques, Objetos y Escenas</h1>
+          <p class="section-subtitle" style="margin-bottom:0;">
+            Selecciona cualquiera de los <strong>20 personajes canónicos del libro</strong>, personaliza su anatomía 3D-to-Pixel, Gema del Arcoíris, armas precolombinas/cibernéticas, prueba <strong>249 animaciones</strong> sobre <strong>escenas de fondo alusivas a Proyecto Protón</strong> y exporta hojas de sprites <code>.sheet.png</code> + metadatos <code>.sheet.json</code> listos para el videojuego.
+          </p>
+        </div>
+      </div>
+
+      <div id="proton-studio-root"></div>
+    </section>
+  </main>
+
+  <script src="assets/data/proton_data.js"></script>
+  <script src="assets/js/proton_studio_bundle.js"></script>
+</body>
+</html>

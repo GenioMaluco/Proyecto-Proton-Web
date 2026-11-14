@@ -880,12 +880,16 @@
         <div class="mini-stat"><strong>${stats.espiritu}</strong>ESP</div>
       </div>
 
-      <div style="font-size:0.83rem;color:var(--text-secondary);display:flex;flex-direction:column;gap:0.35rem;margin-bottom:1rem;">
+      <div style="font-size:0.83rem;color:var(--text-secondary);display:flex;flex-direction:column;gap:0.35rem;margin-bottom:0.85rem;">
         <div><strong>Alias:</strong> ${escapeHtml(ch.descripcion.alias)}</div>
         <div><strong>Habilidades:</strong> ${escapeHtml(ch.descripcion.habilidades)}</div>
         <div><strong>Capítulos donde aparece:</strong> ${ch.capitulos_presente.map((c) => `Cap. ${c}`).join(", ")}</div>
         <div><strong>Ficha Markdown:</strong> <code>saga/personajes/.../${ch.archivo}.md</code></div>
       </div>
+
+      <button type="button" class="btn-primary" data-studio-char="${ch.id}" style="width:100%;justify-content:center;margin-bottom:1rem;font-size:0.84rem;padding:0.55rem 0.9rem;">
+        🎮 Animar y Exportar Sprite en Estudio PixelFX
+      </button>
 
       <h4 style="font-size:0.86rem;text-transform:uppercase;color:var(--accent-cyan);margin-bottom:0.5rem;">
         Relaciones Activas (Hasta Cap. ${maxCap})
@@ -1069,6 +1073,25 @@
 
       if (target.dataset.action === "open-lore") {
         switchView("lore");
+        return;
+      }
+
+      if (target.dataset.action === "open-studio") {
+        switchView("studio");
+        return;
+      }
+
+      if (target.dataset.action === "open-game") {
+        switchView("game");
+        return;
+      }
+
+      if (target.dataset.studioChar) {
+        const charId = target.dataset.studioChar;
+        switchView("studio");
+        if (window.ProtonStudio && typeof window.ProtonStudio.selectCharacter === "function") {
+          window.ProtonStudio.selectCharacter(charId);
+        }
         return;
       }
 
@@ -1278,6 +1301,11 @@
     renderCharacterExplorer();
     renderGemsAndLore();
     initEventListeners();
+    if (window.location.hash === "#studio") {
+      switchView("studio");
+    } else if (window.location.hash === "#game") {
+      switchView("game");
+    }
   }
 
   if (document.readyState === "loading") {
